@@ -8,6 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 
+/*______________________________Navbar________________________________________________________*/
 #navbar{
     display: flex;
     justify-content: space-around;
@@ -92,6 +93,7 @@ html{
 
 }
 
+/*______________________________________________content______________________________________________________________*/
 .content{
     max-width: 100vw;
     max-height: 100vh;
@@ -157,6 +159,8 @@ html{
     height: 1.7em;
 }
 
+/*__________________________________________________Categories_________________________________________________*/
+
 .cat-heading{
     margin: auto;
 }
@@ -167,4 +171,30 @@ html{
 
 .cat-heading h1{
     font-size: 3rem;
+}
+
+.categories-grid{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2rem;
+}
+
+.cat-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cat-item .cat-item-img img{
+    height: 70vh;
+}
+
+.cat-item .cat-item-text h2{
+    transition: all .3s;
+}
+
+.cat-item .cat-item-text h2:hover {
+    color: var(--main-color);
 }
