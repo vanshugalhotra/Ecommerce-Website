@@ -33,6 +33,7 @@
 #navbar .nav-items ul li{
     padding: 28px;
     list-style: none;
+
 }
 
 #navbar .nav-items ul li a{
@@ -86,3 +87,72 @@
     color: var(--color-grey-3);
 
 }
+
+.content{
+    max-width: 100vw;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/back.jpg') no-repeat center center/cover;
+    background-position: center 0;
+    z-index: -1;
+    max-height: 90vh;
+}
+
+.content-desc{
+    font-family: var(--font2);
+    max-width: 50vw;
+    position: relative;
+    left: 5%;
+    top: 5rem;
+}
+
+.content-desc .content-text{
+    color: var(--main-white);
+}
+
+.content-desc .text-h1{
+    font-size: 4.5rem;
+}
+
+.content-desc .text-span{
+    font-size: 3rem;
+    padding: .2em 0;
+}
+
+.content-btns{
+    margin-top: .7em;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.content-btns .btn .icon{
+    background-color: var(--main-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 1rem;
+
+}
+
+.content-btns .btn {
+    margin: .4em 0;
+
+}
+
+.content-btns .btn .icon img{
+    height: 2em;
+}
+
+
+.content-btns .btn:hover{
+   
+}
+
