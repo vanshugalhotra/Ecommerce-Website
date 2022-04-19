@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(14, 14, 14, 1)
+    background-color: var(--color-grey-5);
 }
 
 #navbar .logo{
@@ -75,7 +79,7 @@
     bottom: -2rem;
     left: 0;
     width: 0%;
-    border-bottom: 4px solid var(--main-blue);
+    border-bottom: 4px solid var(--main-color);
     transition: 0.5s;
 }
 
@@ -90,6 +94,8 @@
 
 .content{
     max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
 }
 
 .content::before{
@@ -133,7 +139,7 @@
 }
 
 .content-btns .btn .icon{
-    background-color: var(--main-blue);
+    background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,11 +154,17 @@
 }
 
 .content-btns .btn .icon img{
-    height: 2em;
+    height: 1.7em;
 }
 
-
-.content-btns .btn:hover{
-   
+.cat-heading{
+    margin: auto;
 }
 
+.cat-heading h3{
+    font-size: 1.9rem;
+}
+
+.cat-heading h1{
+    font-size: 3rem;
+}
