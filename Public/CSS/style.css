@@ -199,3 +199,32 @@ html{
 .cat-item .cat-item-text h2:hover {
     color: var(--main-color);
 }
+
+/*__________________________________________________Shipping_______________________________*/
+
+.shipping{
+    padding: 1rem;
+}
+
+.shipping-img img{
+    height: 10rem;
+    width: 97vw;
+    z-index: -1;
+}
+
+.shipping-content{
+    position: relative;
+    top: 7em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shipping-content .shipping-text h1{
+    font-size: 4rem;
+    color: var(--main-white);
+}
+
+.shipping-content .shop-now-btn a{
+    z-index: 2;
+}
