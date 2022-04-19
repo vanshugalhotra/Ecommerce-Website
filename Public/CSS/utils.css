@@ -4,7 +4,7 @@
     --main-black: #111111;
     --main-grey: #2f2f2f;
     --main-white: #f6f6f6;
-    --main-color: #0cc3ce;
+    --main-color: #454e56;
 
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
@@ -16,13 +16,14 @@
     --font1: 'Cabin', sans-serif;
     --font2: 'Recursive', sans-serif;   
     /* --font2: cursive; */
+    --back: url('../img/Backgrounds/simple.jpg') no-repeat center center/cover;
 }
 
 .girl-theme{
     --black1 : #303030;
     --main-black: #111111;
     --main-grey: #2f2f2f;
-    --main-white: #f6f6f6;
+    --main-white: #111111;
     --main-color: #F56692;
 
     --color-grey-1: #dbe1e8;
@@ -30,6 +31,8 @@
     --color-grey-3: #6c7983;
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
+
+    --back: url('../img/Backgrounds/simple_pink.jpg') no-repeat center center/cover;
 
 }
 
