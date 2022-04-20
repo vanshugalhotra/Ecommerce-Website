@@ -21,23 +21,26 @@
     margin-top: 1rem;
 }
 
-.products-grid{
+.all-product-items{
     margin: 2rem 0;
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 1rem;
-    align-items: center;
-    justify-content: center;
+
 }
 
-.products-grid .product-item{
+.products-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+.products-container .product-item{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    margin: 0 1rem;
 }
-
 
 .product-funcs{
     position: relative;
