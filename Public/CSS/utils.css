@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Heebo&display=swap');
+
 :root{
     --black1 : #303030;
     
@@ -14,9 +16,10 @@
 
 
     --font1: 'Cabin', sans-serif;
-    --font2: 'Recursive', sans-serif;   
-    /* --font2: cursive; */
-    --back: url('../img/Backgrounds/simple.jpg') no-repeat center center/cover;
+    --font2: 'Heebo', sans-serif; 
+
+    --back: url('../img/Backgrounds/simple.jpg');
+    --prod-back: url('../img/Backgrounds/men_prod.jpg');
 }
 
 .girl-theme{
@@ -32,7 +35,8 @@
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
 
-    --back: url('../img/Backgrounds/simple_pink.jpg') no-repeat center center/cover;
+    --back: url('../img/Backgrounds/simple_pink.jpg');
+    --prod-back: url('../img/Backgrounds/prod.jpg');
 
 }
 
@@ -119,6 +123,7 @@
     height: auto;
     display: block;
     transition: all .2s;
+    cursor: pointer;
 }
 
 .img-div img:hover{

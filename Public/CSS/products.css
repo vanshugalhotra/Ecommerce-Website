@@ -1,0 +1,141 @@
+/*creating different classes for different categories*/
+
+.content::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--prod-back) no-repeat center center/cover;
+    background-position: center 0;
+    z-index: -1;
+    max-height: 90vh;
+}
+
+.content-desc .content-text{
+    color: var(--main-white) !important;
+}
+
+/*___________________________________Products grid_______________________*/
+
+#products{
+    margin-top: 1rem;
+}
+
+.products-grid{
+    margin: 2rem 0;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-grid .product-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.product-funcs{
+    position: relative;
+    bottom: 47px;
+    background-color: var(--color-grey-5);
+    right: 62px;
+    transition: all .4s;
+    transform: translateX(-110%);
+}
+
+.product-funcs .product-func-icon{
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.product-funcs .product-func-icon img:hover{
+    transform: translateY(-5%);
+}
+
+
+.product-funcs .product-func-icon img{
+    height: 1rem;
+    filter: invert(100%);
+    position: relative;
+    top: 21%;
+    left: 28%;
+}
+
+.center-icon{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    width: 36px !important;
+}
+
+.center-icon img{
+    left: 25% !important;
+}
+
+.product-img:hover ~ .product-funcs{
+    transform: translateX(0%);
+}
+
+.product-funcs:hover{
+    transform: translateX(0%);
+}
+
+.product-desc{
+    align-self: flex-start;
+    margin-top: -20px;
+}
+
+.product-desc a{
+    display: block;
+    text-decoration: none;
+}
+
+.product-desc .cat-text{
+
+    color: var(--main-color);
+    transition: all .3s;
+    opacity: 1;
+    font-weight: 700;
+    letter-spacing: .02em;
+}
+
+.product-desc .cat-text:hover{
+    opacity: 0.8;
+}
+
+.product-desc .name-text{
+    padding: .3em 0;
+    font-size: .8rem;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: .1em;
+    position: relative;
+}
+
+.product-desc .name-text::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--main-color);
+    transition: all .3s;
+}
+
+.product-desc .name-text:hover::after{
+    width: 100%;
+}
+
+.product-desc .price-text{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--main-black);
+    letter-spacing: .02em;
+}
