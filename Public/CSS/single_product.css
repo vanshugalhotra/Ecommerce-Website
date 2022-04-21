@@ -53,9 +53,10 @@
     color: #e0e0e0;
     overflow: hidden;
     font-size: 1.4rem;
+    font-family: "Font Awesome 5 Free";
 }
 
-.product-content .product-desc .star-rating::before{
+.product-content .product-desc .star-rating::before{ /* this one for the empty stars */
     content: "\f005\f005\f005\f005\f005";
     letter-spacing: 4px;
     font-weight: 900;
@@ -70,7 +71,7 @@
     /* color: var(--main-color); */
     font-family: "Font Awesome 5 Free";
 }
-.product-content .product-desc .star-rating span::before{
+.product-content .product-desc .star-rating span::before{ /* this one for filling the stars */
     content: "\f005\f005\f005\f005\f005";
     letter-spacing: 4px;
     font-weight: 900;
@@ -145,13 +146,49 @@
     font-weight: 500;
     letter-spacing: .12em;
     text-transform: uppercase;
-    padding: 10px 40px;
     background-color: var(--main-black);
     color: var(--main-white);
     line-height: 2rem;
     font-family: var(--font2);
+    padding: 10px 40px;
 }
 
 .product-content .product-buttons .quantity-buttons .addCart-btn .cart-btn:hover{
     background-color: var(--color-grey-5);
+}
+
+.product-content .product-buttons .wishlist-btn-content{
+    margin-top: 3rem;
+    height: 6rem;
+}
+
+.product-content .product-buttons .wishlist-btn-content .wishlist-btn{
+    text-decoration: none;
+    background-color: var(--main-light-pink);
+    color: var(--main-pink);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-family: var(--font2);
+    padding: 20px 33px ;
+    transition: all .2s;
+}
+
+.product-content .product-buttons .wishlist-btn-content .wishlist-btn:hover{
+    background-color: var(--main-pink);
+    color: #fff;
+}
+
+.product-content .product-buttons .wishlist-btn-content .wishlist-btn .heart{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 9px;
+    right: 10px;
+}
+
+.product-content .product-buttons .wishlist-btn-content .wishlist-btn .heart img{
+    height: 1.8rem;
 }

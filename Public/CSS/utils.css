@@ -10,9 +10,11 @@ body{
     
     --main-black: #111111;
     --main-grey: #2f2f2f;
-    --main-white: #f6f6f6;
+    /* --main-white: #f6f6f6; */
+    --main-white: #fff;
     --main-color: #454e56;
     --main-pink: #e08686;
+    --main-light-pink: #f9e7e7;
 
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
