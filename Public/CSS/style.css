@@ -75,20 +75,6 @@ html{
     /* box-shadow: 2px 2px 5px var(--main-black); */
 }
 
-#navbar .nav-items ul li a:after{
-    content: "";
-    position: absolute;
-    bottom: -2rem;
-    left: 0;
-    width: 0%;
-    border-bottom: 4px solid var(--main-color);
-    transition: 0.5s;
-}
-
-#navbar .nav-items ul li a:hover:after{
-    width: 100%;
-}
-
 #navbar .nav-items li .nav-active{
     color: var(--color-grey-3);
 

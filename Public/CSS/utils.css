@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Heebo&family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Cabin&family=Heebo&display=swap');
 
 body{
     /* background-color: var(--color-grey-1); */
@@ -25,7 +25,7 @@ body{
 
     --font1: 'Cabin', sans-serif;
     --font2: 'Heebo', sans-serif; 
-    --font3: 'Barlow', sans-serif;
+    --font3: 'Barlow Condensed', sans-serif;
 
     --back: url('../img/Backgrounds/simple.jpg');
     --prod-back: url('../img/Backgrounds/men_prod.jpg');
@@ -146,7 +146,21 @@ body{
     box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-
 .zoom-img-div img:hover{
     transform: scale(1.12);
+}
+
+
+.bottom-line::after{
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    width: 0%;
+    border-bottom: 4px solid var(--main-color);
+    transition: 0.5s;
+}
+
+.bottom-line:hover::after{
+    width: 100%;
 }

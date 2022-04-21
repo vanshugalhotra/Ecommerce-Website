@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    margin-left: 7rem;
 }
 
 .product-img{
@@ -41,7 +42,7 @@
     font-family: var(--font3);
     color: var(--main-black);
     text-transform: uppercase;
-    letter-spacing: .3px;
+    letter-spacing: 1.3px;
     font-weight: 600;
 }
 
@@ -101,6 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
 }
 
 .product-content .product-buttons .quantity-buttons .pm-icon{
@@ -116,10 +118,12 @@
     border-radius: 50%;
     cursor: pointer;
     transition: all .14s;
+    z-index: -1;
 }
 
 .product-content .product-buttons .quantity-buttons .pm-icon img{
     height: 1.4rem;
+    z-index: -1;
 }
 
 .product-content .product-buttons .quantity-buttons .pm-icon:hover{
@@ -138,7 +142,7 @@
     font-family: var(--font3);
     font-weight: 500;
     color: var(--main-black);
-
+    z-index: -1;
 }
 
 .product-content .product-buttons .quantity-buttons .addCart-btn{
@@ -153,7 +157,7 @@
     letter-spacing: .12em;
     text-transform: uppercase;
     background-color: var(--main-black);
-    color: var(--main-white);
+    color: #fff;
     line-height: 2rem;
     font-family: var(--font2);
     padding: 10px 40px;
@@ -226,4 +230,48 @@
 
 .dotted-sep{
 font-size: 10px;
+}
+
+/*_________________________tabs wrapper_________________________________________________*/
+
+.tabs-wrapper{
+    margin-top: 5rem;
+    height: 40vh;
+    border: 2px solid;
+}
+
+.wrapper-nav-items{
+
+}
+
+.wrapper-nav-items ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-nav-items ul li{
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.wrapper-nav-items ul li a{
+    font-family: var(--font3);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color: var(--main-black);
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
+.wrapper-nav-items ul li a::after{
+    bottom: -.7rem;
+    border-bottom: 3px solid var(--main-pink);
+}
+
+.wrap-active::after{
+    border-bottom: 3px solid var(--main-pink);
+    width: 100%;
 }
