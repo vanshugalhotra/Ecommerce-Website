@@ -12,15 +12,21 @@
     max-width: 40vw;
 }
 
-.product-img .product-img .small-left{}
+.product-img .small-left{
+    width: 6vw;
+}
 
-.product-img .product-img .big-img{}
+.product-img .big-img{
+    width: calc(100% - 111px);
+}
 
 .product-img .product-img .big-img img{
     display: block;
     width: 100%;
     position: relative;
 }
+
+/*______________________________Product content right side_________________________________________*/
 
 .product-content{
     max-width: 45vw;
@@ -159,7 +165,7 @@
 
 .product-content .product-buttons .wishlist-btn-content{
     margin-top: 3rem;
-    height: 6rem;
+    height: 3.36rem;
 }
 
 .product-content .product-buttons .wishlist-btn-content .wishlist-btn{
@@ -191,4 +197,33 @@
 
 .product-content .product-buttons .wishlist-btn-content .wishlist-btn .heart img{
     height: 1.8rem;
+}
+
+.product-content .product-others{
+    margin-top: 2rem;
+}
+
+.product-content .product-others .type-head{
+    display: block;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 600;
+    font-family: var(--font2);
+}
+
+.product-content .product-others .type-head .type-value{
+    font-weight: 500 !important;
+}
+
+.hyper-value a:hover{
+    color: var(--main-pink);
+    font-weight: 550;
+}
+
+.product-content .share-product-items{
+    margin-top: 1.3em;
+}
+
+.dotted-sep{
+font-size: 10px;
 }

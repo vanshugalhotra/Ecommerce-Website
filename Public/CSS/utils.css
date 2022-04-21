@@ -53,6 +53,10 @@ body{
     text-align: center;
 }
 
+.td-none{
+    text-decoration: none;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -122,9 +126,7 @@ body{
 .img-div{
     position: relative;
     margin: 10px auto;
-    overflow: hidden;
-    border: 6px solid #fff;
-    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
+
     
 }
 
@@ -134,11 +136,17 @@ body{
     width: 100%;
     height: auto;
     display: block;
-    transition: all .2s;
     cursor: pointer;
 
 }
 
-.img-div img:hover{
+.zoom-img-div{
+    overflow: hidden;
+    border: 6px solid #fff;
+    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.zoom-img-div img:hover{
     transform: scale(1.12);
 }
