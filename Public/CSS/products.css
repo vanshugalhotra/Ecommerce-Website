@@ -23,7 +23,7 @@
 
 .all-product-items{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     grid-row-gap: 2rem;
     margin: 3em 8em;
 
@@ -37,6 +37,7 @@
     overflow: hidden;
     margin: 0 1rem;
 }
+
 
 .product-img-content{
     overflow: hidden;
@@ -104,7 +105,7 @@
 
 .product-desc .cat-text{
 
-    color: var(--main-color);
+    color: #e08686;
     transition: all .3s;
     opacity: 1;
     font-weight: 700;
@@ -144,4 +145,5 @@
     font-weight: 700;
     color: var(--main-black);
     letter-spacing: .02em;
+    margin-top: 5px;
 }
