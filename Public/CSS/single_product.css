@@ -133,3 +133,25 @@
     color: var(--main-black);
 
 }
+
+.product-content .product-buttons .quantity-buttons .addCart-btn{
+    margin-left: 3em;
+}
+
+.product-content .product-buttons .quantity-buttons .addCart-btn .cart-btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    line-height: 2rem;
+    font-family: var(--font2);
+}
+
+.product-content .product-buttons .quantity-buttons .addCart-btn .cart-btn:hover{
+    background-color: var(--color-grey-5);
+}
