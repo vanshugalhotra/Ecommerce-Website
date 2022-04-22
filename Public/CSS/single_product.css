@@ -271,18 +271,56 @@ font-size: 10px;
 
 /* _________Description content   */
 
+.center-div{
+    /* position: absolute;
+    left: 25%; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper-content-text{
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: .02em;
+    font-family: var(--font2);
+    color: #333;
+}
+
 #description-content{
     margin-top: 2.73rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #description-content .desc-text{
     text-align: center;
     max-width: 50vw;
-    font-size: 13px;
-    line-height: 22px;
-    letter-spacing: .02em;
-    font-family: var(--font2);
 }
+
+#shipping-content{
+    margin-top: 3.3rem;
+    display: none;
+}
+
+#shipping-content .shipping-text{
+    text-align: center;
+}
+
+#shipping-content .ship-text{
+    font-weight: 600;
+}
+
+#shipping-content .policy-stuff{
+    padding: .5em 0;
+    text-align: center;
+}
+
+#shipping-content .policy-stuff a{
+    font-weight: 600;
+}
+
+#shipping-content .policy-stuff a:hover{
+    color: var(--main-pink);
+}
+
