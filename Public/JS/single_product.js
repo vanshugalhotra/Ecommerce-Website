@@ -25,9 +25,9 @@ minusBtn.addEventListener('click', () => {
 const wrap_aTags_and_Content = {
     "wrap-desc": "description-content", // nav-items id and corresponding div id to open
     "wrap-ship": "shipping-content",
-    "wrap-info": "",
-    "wrap-reviews": "",
-    "wrap-vendor": "",
+    "wrap-info": "additional-content",
+    "wrap-reviews": "reviews-content",
+    "wrap-vendor": "vendor-content",
     "wrap-location": "",
     "wrap-products": "",
     "wrap-enquiry": "",

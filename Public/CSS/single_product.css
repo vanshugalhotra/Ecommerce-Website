@@ -217,10 +217,6 @@
     font-weight: 500 !important;
 }
 
-.hyper-value a:hover{
-    color: var(--main-pink);
-    font-weight: 550;
-}
 
 .product-content .share-product-items{
     margin-top: 1.3em;
@@ -269,12 +265,8 @@ font-size: 10px;
     width: 100%;
 }
 
-/* _________Description content   */
-
+/*_____________________wrapper content__________________________*/
 .center-div{
-    /* position: absolute;
-    left: 25%; */
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,6 +281,7 @@ font-size: 10px;
     color: #333;
 }
 
+/*________description____________*/
 #description-content{
     margin-top: 2.73rem;
 }
@@ -297,6 +290,8 @@ font-size: 10px;
     text-align: center;
     max-width: 50vw;
 }
+
+/*_____________shipping___________________*/
 
 #shipping-content{
     margin-top: 3.3rem;
@@ -320,7 +315,26 @@ font-size: 10px;
     font-weight: 600;
 }
 
-#shipping-content .policy-stuff a:hover{
-    color: var(--main-pink);
+/*________additional information_______*/
+
+#additional-content{
+    margin-top: 2.5rem;
+    display: none;
 }
 
+#additional-content .additional-info div{
+    padding: .6em 0;
+}
+
+/*________reviews__________*/
+
+/*____________vendor info_______________*/
+
+#vendor-content{
+    margin-top: 2.8rem;
+    display: none;
+}
+
+#vendor-content .vendor-info div{
+    padding: .5em 0;
+}

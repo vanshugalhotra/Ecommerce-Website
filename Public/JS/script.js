@@ -14,7 +14,8 @@ for (let each_anchor of nav_anchors) { // getting each anchors from group of anc
         var current_active = document.getElementsByClassName(active_class);
         current_active[0].className = current_active[0].className.replace(active_class, "");
         
-        this.className += " " + active_class;
+        this.className += " " + active_class; 
+        window.location.href = this.href;
     });
 }
 
