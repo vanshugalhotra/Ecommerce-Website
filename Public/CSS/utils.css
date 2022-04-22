@@ -37,6 +37,7 @@ body{
     --main-grey: #2f2f2f;
     --main-white: #111111;
     --main-color: #F56692;
+    --main-color: #e08686;
 
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
@@ -44,10 +45,12 @@ body{
     --color-grey-4: #454e56;
     --color-grey-5: #2a2e35;
 
-    --back: url('../img/Backgrounds/simple_pink.jpg');
+    /* --back: url('../img/Backgrounds/simple_pink.jpg'); */
     --prod-back: url('../img/Backgrounds/prod.jpg');
 
 }
+
+/*________________small utility classes_______________________________*/
 
 .center{
     text-align: center;
@@ -76,6 +79,22 @@ body{
     color: var(--main-pink);
 }
 
+
+.bottom-line::after{
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    width: 0%;
+    border-bottom: 4px solid var(--main-color);
+    transition: 0.5s;
+}
+
+.bottom-line:hover::after{
+    width: 100%;
+}
+
+/*______________buttons_______________________________*/
 
 .btn{
     border-radius: 30px;
@@ -128,6 +147,28 @@ body{
     height: 1.4rem;
 }
 
+.sqaure-btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    background-color: var(--main-black);
+    color: #fff;
+    line-height: 2rem;
+    font-family: var(--font2);
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.sqaure-btn:hover{
+    background-color: var(--color-grey-5);
+}
+
+/*_____________________image_______________________________*/
+
 .img-div{
     position: relative;
     margin: 10px auto;
@@ -155,17 +196,26 @@ body{
     transform: scale(1.12);
 }
 
+/*________________Forms____________________*/
 
-.bottom-line::after{
-    content: "";
-    position: absolute;
-    bottom: -2rem;
-    left: 0;
-    width: 0%;
-    border-bottom: 4px solid var(--main-color);
-    transition: 0.5s;
+.form-control{
+    position: relative;
+    display: block;
+    font-size: 13px;
+    font-family: var(--font2);
+    font-weight: 500;
+    line-height: 1.2rem;
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    outline: none;
+    transition: all .3s;
 }
 
-.bottom-line:hover::after{
-    width: 100%;
+.form-control:hover{
+    border: 1px solid #333;
+    transform: translateY(-1%);
 }

@@ -30,7 +30,7 @@ const wrap_aTags_and_Content = {
     "wrap-vendor": "vendor-content",
     "wrap-location": "",
     "wrap-products": "",
-    "wrap-enquiry": "",
+    "wrap-enquiry": "enquiry-content",
 }
 
 const wrapUl = document.getElementById('wrapper-nav-ul'); // getting the ul container
