@@ -28,8 +28,8 @@ const wrap_aTags_and_Content = {
     "wrap-info": "additional-content",
     "wrap-reviews": "reviews-content",
     "wrap-vendor": "vendor-content",
-    "wrap-location": "",
-    "wrap-products": "",
+    "wrap-location": "location-content",
+    "wrap-products": "more-products-content",
     "wrap-enquiry": "enquiry-content",
 }
 

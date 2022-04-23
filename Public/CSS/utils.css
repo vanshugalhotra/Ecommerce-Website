@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Cabin&family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Heebo&family=Poppins&display=swap');
 
 body{
     /* background-color: var(--color-grey-1); */
@@ -23,11 +23,11 @@ body{
     --color-grey-5: #2a2e35;
 
 
-    --font1: 'Cabin', sans-serif;
+    --font1: 'Poppins', sans-serif;
     --font2: 'Heebo', sans-serif; 
     --font3: 'Barlow Condensed', sans-serif;
 
-    --back: url('../img/Backgrounds/simple.jpg');
+    --back: url('../img/Backgrounds/back.jpg');
     --prod-back: url('../img/Backgrounds/men_prod.jpg');
 }
 
@@ -92,6 +92,22 @@ body{
 
 .bottom-line:hover::after{
     width: 100%;
+}
+
+.small-label{
+    font-size: 1.2rem;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    font-weight: 600;
+}
+
+.big-label{
+    font-size: 1.5rem;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    font-weight: 600;
 }
 
 /*______________buttons_______________________________*/
@@ -188,12 +204,12 @@ body{
 
 .zoom-img-div{
     overflow: hidden;
-    border: 6px solid #fff;
-    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.4);
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .zoom-img-div img:hover{
-    transform: scale(1.12);
+    transform: scale(1.1);
 }
 
 /*________________Forms____________________*/
@@ -218,4 +234,124 @@ body{
 .form-control:hover{
     border: 1px solid #333;
     transform: translateY(-1%);
+}
+
+/*__________________________________product item card________________________________*/
+.product-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 1rem;
+}
+
+
+.product-item .product-img-content{
+    overflow: hidden;
+}
+
+.product-funcs{
+    position: relative;
+    bottom: 47px;
+    background-color: var(--color-grey-5);
+    transition: all .4s;
+    transform: translateX(-110%);
+    width: 120px;
+    opacity: 0.8;
+}
+
+.product-funcs .product-func-icon{
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.product-funcs .product-func-icon img:hover{
+    transform: translateY(-5%);
+}
+
+
+.product-funcs .product-func-icon img{
+    height: 1rem;
+    filter: invert(100%);
+    position: relative;
+    top: 21%;
+    left: 28%;
+}
+
+.center-icon{
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    width: 36px !important;
+}
+
+.center-icon img{
+    left: 25% !important;
+}
+
+/*accessing the sibling of .product-img using " ~ " */
+.product-img:hover ~ .product-funcs{
+    transform: translateX(0%);
+}
+
+.product-funcs:hover{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.product-desc{
+    margin-top: -20px;
+    margin-right: 60%;
+}
+
+.product-desc a{
+    display: block;
+    text-decoration: none;
+}
+
+.product-desc .cat-text{
+
+    color: #e08686;
+    transition: all .3s;
+    opacity: 1;
+    font-weight: 700;
+    letter-spacing: .02em;
+}
+
+.product-desc .cat-text:hover{
+    opacity: 0.8;
+}
+
+.product-desc .name-text{
+    padding: .3em 0;
+    font-size: .8rem;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: .1em;
+    position: relative;
+}
+
+.product-desc .name-text::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--main-color);
+    transition: all .3s;
+}
+
+.product-desc .name-text:hover::after{
+    width: 100%;
+}
+
+.product-desc .price-text{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--main-black);
+    letter-spacing: .02em;
+    margin-top: 5px;
 }
