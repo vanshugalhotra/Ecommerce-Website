@@ -12,7 +12,7 @@ body{
     --main-grey: #2f2f2f;
     /* --main-white: #f6f6f6; */
     --main-white: #fff;
-    --main-color: #454e56;
+    --main-color: #12bbc4;
     --main-pink: #e08686;
     --main-light-pink: #f9e7e7;
 
@@ -76,7 +76,7 @@ body{
 }
 
 .pink-hover:hover{
-    color: var(--main-pink);
+    color: var(--main-color);
 }
 
 
@@ -188,8 +188,6 @@ body{
 .img-div{
     position: relative;
     margin: 10px auto;
-
-    
 }
 
 .img-div img{
