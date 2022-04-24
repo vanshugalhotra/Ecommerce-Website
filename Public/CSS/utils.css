@@ -79,6 +79,11 @@ body{
     color: var(--main-color);
 }
 
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .bottom-line::after{
     content: "";
@@ -352,4 +357,113 @@ body{
     color: var(--main-black);
     letter-spacing: .02em;
     margin-top: 5px;
+}
+
+/* single product related utility */
+
+.product-desc-text{
+    font-family: var(--font3);
+    color: var(--main-black);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+}
+
+.single-product-desc h2{
+    font-size: 2rem;
+}
+.single-product-desc h3{
+    font-size: 1.5rem;
+}
+
+.single-product-desc .star-rating{
+    margin-top: 1em;
+    position: relative;
+    vertical-align: middle;
+    color: #e0e0e0;
+    overflow: hidden;
+    font-size: 1.4rem;
+    font-family: "Font Awesome 5 Free";
+}
+
+.single-product-desc .star-rating::before{ /* this one for the empty stars */
+    content: "\f005\f005\f005\f005\f005";
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+
+.single-product-desc .star-rating span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: var(--main-pink);
+    /* color: var(--main-color); */
+    font-family: "Font Awesome 5 Free";
+}
+.single-product-desc .star-rating span::before{ /* this one for filling the stars */
+    content: "\f005\f005\f005\f005\f005";
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+
+.single-product-desc .product-desc-p{
+    margin-top: 3em;
+    font-size: 13px;
+    color: var(--color-grey-5);
+    letter-spacing: .02em;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: var(--font2);
+    max-width: 30vw;
+}
+
+
+.product-buttons .quantity-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.product-buttons .quantity-buttons .pm-icon{
+    position: relative;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-black);
+    vertical-align: middle;
+    border: 1px solid var(--main-black);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .14s;
+}
+
+.product-buttons .quantity-buttons .pm-icon img{
+    height: 1.4rem;
+
+}
+
+.product-buttons .quantity-buttons .pm-icon:hover{
+    border: 1px solid var(--main-pink);
+}
+
+
+.product-buttons .quantity-buttons #quantity{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 3rem;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    font-family: var(--font3);
+    font-weight: 500;
+    color: var(--main-black);
+}
+
+.product-buttons .quantity-buttons .addCart-btn{
+    margin-left: 3em;
 }

@@ -1,6 +1,4 @@
-/*creating different classes for different categories*/
-
-.content::before{
+.content::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -11,20 +9,95 @@
     max-height: 90vh;
 }
 
-.content-desc .content-text{
+.content-desc .content-text {
     color: var(--main-white) !important;
 }
 
 /*___________________________________Products grid_______________________*/
 
-#products{
+#products {
     margin-top: 1rem;
 }
 
-.all-product-items{
+.all-product-items {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 2rem;
     margin: 3em 8em;
+}
 
+
+/* _____________________quick veiw____________________-*/
+.quick-view{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(255,255,255,0.77); /* white opacity */
+    transition: all .2s;
+
+    display: none;
+
+}
+
+.quick-view-content{
+    background-color: #fefefe;
+    margin: 2% auto; /* 4% from the top and centered */
+    /* border: 1px solid #888; */
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+
+.quick-img{
+    margin: 0 !important;
+    width: 100%;
+}
+
+.quick-img img {
+    height: 86vh;
+}
+
+.quick-desc-content{
+    background-color: #fff;
+    padding: 60px 55px;
+    width: 78%;
+}
+
+.quick-desc .single-product-desc h2 {
+    font-size: 2.8rem;
+}
+
+.quick-desc .single-product-desc h3 {
+    font-size: 2rem;
+}
+
+.product-buttons{
+    margin-top: 3rem;
+}
+
+.product-buttons .addCart-btn{
+    margin-top: 3rem;
+}
+
+.product-buttons .addCart-btn a{
+    line-height: 1.6rem;
+}
+
+.close-btn{
+    padding: 0 1.2em;
+    cursor: pointer;
+    align-self: flex-start;
+    position: relative;
+    top: 15px;
+    transition: all .2s;
+}
+
+.close-btn:hover{
+    transform: translateY(-5%);
+}
+
+.close-btn img{
+    height: 1.2rem;
 }
