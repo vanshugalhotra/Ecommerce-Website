@@ -504,16 +504,17 @@ body{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     background-color: rgba(255,255,255,0.77); /* white opacity */
-    transition: all .2s;
+    transition: all .2s ease-in-out;
 
-    display: none;
+    /* display: none; */
+    transform: translateY(100%);
 
 }
 
 .quick-view-content{
     background-color: #fefefe;
+    box-shadow: 2px 2px 10px #b6bdc5;
     margin: 2% auto; /* 4% from the top and centered */
-    /* border: 1px solid #888; */
     width: 60%; /* Could be more or less, depending on screen size */
 }
 

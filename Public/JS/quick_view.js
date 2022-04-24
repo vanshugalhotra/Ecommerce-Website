@@ -11,7 +11,8 @@ var all_eyeIcons = all_product_items.getElementsByClassName('eye-icon');
 for(let each_eyeIcon of all_eyeIcons){
     each_eyeIcon.addEventListener('click', function(e){
         e.preventDefault();
-        quickView.style.display = "flex";
+        // quickView.style.display = "flex";
+        quickView.style.transform = "translateY(0%)";
     })
 }
 
@@ -20,12 +21,14 @@ const closeBtn = document.getElementsByClassName('close-btn')[0];
 
 
 closeBtn.addEventListener('click', ()=>{
-    quickView.style.display = "none";
+    // quickView.style.display = "none";
+    quickView.style.transform = "translateY(100%)";
 });
 
 // When the user clicks anywhere outside of the quickView, close it
 window.onclick = function(event) {
     if (event.target == quickView) {
-      quickView.style.display = "none";
+        // quickView.style.display = "none";
+        quickView.style.transform = "translateY(100%)";
     }
   }
