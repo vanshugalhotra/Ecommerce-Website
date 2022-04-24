@@ -75,6 +75,11 @@ body{
     font-family: var(--font3);
 }
 
+.pink-hover{
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
 .pink-hover:hover{
     color: var(--main-color);
 }
@@ -114,6 +119,18 @@ body{
     letter-spacing: .03em;
     font-weight: 600;
 }
+
+.wrapper-a{
+    font-family: var(--font3);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color: var(--main-black);
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
 
 /*______________buttons_______________________________*/
 
@@ -239,6 +256,15 @@ body{
     transform: translateY(-1%);
 }
 
+.submit-btn{
+    margin-top: 2rem;
+    line-height: 1.4rem !important;
+    background-color: #000;
+}
+.submit-btn:hover{
+    background-color: #1b1919;
+}
+
 /*__________________________________product item card________________________________*/
 .product-item{
     display: flex;
@@ -359,7 +385,7 @@ body{
     margin-top: 5px;
 }
 
-/* single product related utility */
+/* ___________________________________________________single product related utility */
 
 .product-desc-text{
     font-family: var(--font3);

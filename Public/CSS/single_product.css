@@ -1,4 +1,4 @@
-.product-details{
+.product-details {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,22 +6,22 @@
     margin-left: 7rem;
 }
 
-.product-img{
+.product-img {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 40vw;
 }
 
-.product-img .small-left{
+.product-img .small-left {
     width: 6vw;
 }
 
-.product-img .big-img{
+.product-img .big-img {
     width: calc(100% - 111px);
 }
 
-.product-img .product-img .big-img img{
+.product-img .product-img .big-img img {
     display: block;
     width: 100%;
     position: relative;
@@ -29,27 +29,27 @@
 
 /*______________________________Product content right side_________________________________________*/
 
-.product-content{
+.product-content {
     max-width: 45vw;
     width: 45vw;
     margin: 0 3em;
 }
 
-.product-content .product-desc{
+.product-content .product-desc {
     width: 40vw;
 }
 
-.product-content .product-buttons{
+.product-content .product-buttons {
     margin-top: 1.5rem;
 }
 
 
-.product-content .product-buttons .wishlist-btn-content{
+.product-content .product-buttons .wishlist-btn-content {
     margin-top: 3rem;
     height: 3.36rem;
 }
 
-.product-content .product-buttons .wishlist-btn-content .wishlist-btn{
+.product-content .product-buttons .wishlist-btn-content .wishlist-btn {
     text-decoration: none;
     background-color: var(--main-light-pink);
     color: var(--main-pink);
@@ -58,16 +58,16 @@
     letter-spacing: .14em;
     text-transform: uppercase;
     font-family: var(--font2);
-    padding: 20px 33px ;
+    padding: 20px 33px;
     transition: all .2s;
 }
 
-.product-content .product-buttons .wishlist-btn-content .wishlist-btn:hover{
+.product-content .product-buttons .wishlist-btn-content .wishlist-btn:hover {
     background-color: var(--main-pink);
     color: #fff;
 }
 
-.product-content .product-buttons .wishlist-btn-content .wishlist-btn .heart{
+.product-content .product-buttons .wishlist-btn-content .wishlist-btn .heart {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -76,15 +76,15 @@
     right: 10px;
 }
 
-.product-content .product-buttons .wishlist-btn-content .wishlist-btn .heart img{
+.product-content .product-buttons .wishlist-btn-content .wishlist-btn .heart img {
     height: 1.8rem;
 }
 
-.product-content .product-others{
+.product-content .product-others {
     margin-top: 2rem;
 }
 
-.product-content .product-others .type-head{
+.product-content .product-others .type-head {
     display: block;
     font-size: 13px;
     line-height: 22px;
@@ -92,67 +92,56 @@
     font-family: var(--font2);
 }
 
-.product-content .product-others .type-head .type-value{
+.product-content .product-others .type-head .type-value {
     font-weight: 500 !important;
 }
 
 
-.product-content .share-product-items{
+.product-content .share-product-items {
     margin-top: 1.3em;
 }
 
-.dotted-sep{
-font-size: 10px;
+.dotted-sep {
+    font-size: 10px;
 }
 
 /*_________________________tabs wrapper_________________________________________________*/
 
-.tabs-wrapper{
+.tabs-wrapper {
     margin-top: 5rem;
     display: table;
     width: 100vw;
 }
 
 
-.wrapper-nav-items ul{
+.wrapper-nav-items ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wrapper-nav-items ul li{
+.wrapper-nav-items ul li {
     list-style: none;
     padding: 0 1rem;
 }
 
-.wrapper-a{
-    font-family: var(--font3);
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    line-height: 1.5em;
-    color: var(--main-black);
-    font-weight: 600;
-    text-decoration: none;
-    position: relative;
-}
-
-.wrapper-nav-items ul li a::after{
+.wrapper-nav-items ul li a::after {
     bottom: -.7rem;
     border-bottom: 3px solid var(--main-pink);
 }
 
-.wrap-active::after{
+.wrap-active::after {
     border-bottom: 3px solid var(--main-pink);
     width: 100%;
 }
 
 /*_____________________wrapper content__________________________*/
 
-.tabs-wrapper-content{
+.tabs-wrapper-content {
     display: table-row;
 }
 
-.wrapper-content-text{
+.wrapper-content-text {
     font-size: 13px;
     line-height: 22px;
     letter-spacing: .02em;
@@ -161,11 +150,11 @@ font-size: 10px;
 }
 
 /*________description____________*/
-#description-content{
+#description-content {
     margin-top: 2.73rem;
 }
 
-#description-content .desc-text{
+#description-content .desc-text {
     text-align: center;
     max-width: 50vw;
 
@@ -173,36 +162,36 @@ font-size: 10px;
 
 /*_____________shipping___________________*/
 
-#shipping-content{
+#shipping-content {
     margin-top: 3.3rem;
     display: none;
 }
 
-#shipping-content .shipping-text{
+#shipping-content .shipping-text {
     text-align: center;
 }
 
-#shipping-content .ship-text{
+#shipping-content .ship-text {
     font-weight: 600;
 }
 
-#shipping-content .policy-stuff{
+#shipping-content .policy-stuff {
     padding: .5em 0;
     text-align: center;
 }
 
-#shipping-content .policy-stuff a{
+#shipping-content .policy-stuff a {
     font-weight: 600;
 }
 
 /*________additional information_______*/
 
-#additional-content{
+#additional-content {
     margin-top: 2.5rem;
     display: none;
 }
 
-#additional-content .additional-info div{
+#additional-content .additional-info div {
     padding: .6em 0;
 }
 
@@ -210,68 +199,58 @@ font-size: 10px;
 
 /*____________vendor info_______________*/
 
-#vendor-content{
+#vendor-content {
     margin-top: 2.8rem;
     display: none;
 }
 
-#vendor-content .vendor-info div{
+#vendor-content .vendor-info div {
     padding: .5em 0;
 }
 
 /*__________location__________*/
 
-#location-content{
+#location-content {
     display: none;
     margin-top: 3rem;
 }
 
 /*_____________More Products______________*/
-#more-products-content{
+#more-products-content {
     margin-top: 3rem;
     display: none;
 }
 
 /*____________Product Enquiry________________*/
 
-#enquiry-content{
+#enquiry-content {
     margin-top: 2.4rem;
     flex-direction: column;
     display: none;
 }
 
-#enquiry-content form{
+#enquiry-content form {
     width: 60vw;
-}
-
-#enquiry-content form .submit-btn{
-    margin-top: 2rem;
-    line-height: 1.4rem !important;
-    background-color: #000;
-}
-
-#enquiry-content form .submit-btn:hover{
-    background-color: #1b1919;
 }
 
 /* ____________________________________________________________related products______________________*/
 
-.related-products{
+.related-products {
     margin-top: 6rem;
 }
 
-.related-products .related-heading p{
+.related-products .related-heading p {
     font-size: 1.6rem;
 }
 
-.related-product-items{
+.related-product-items {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 2rem;
     margin: 3em 8em;
 }
 
-.related-img{
+.related-img {
     border: 0;
     box-shadow: none;
 }
