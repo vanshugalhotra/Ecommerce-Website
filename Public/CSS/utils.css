@@ -75,6 +75,25 @@ body{
     font-family: var(--font3);
 }
 
+.dotted-seperator{
+    width: 100%;
+    background-image: radial-gradient(circle at 0 100%,#000 1px,transparent 1px);
+    background-size: 2px 2px;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    margin-top: 1em;
+}
+
+.dotted-seperator .seperator .seperator-border{
+    border-color: #fff;
+    border-top: 1px solid #ebebeb;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+
 .pink-hover{
     transition: all .2s ease-in-out;
     cursor: pointer;

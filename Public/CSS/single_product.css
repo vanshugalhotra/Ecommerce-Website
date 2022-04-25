@@ -84,6 +84,9 @@
     margin-top: 2rem;
 }
 
+.product-content .dotted-seperator{
+    width: 15%;
+}
 .product-content .product-others .type-head {
     display: block;
     font-size: 13px;
@@ -99,10 +102,6 @@
 
 .product-content .share-product-items {
     margin-top: 1.3em;
-}
-
-.dotted-sep {
-    font-size: 10px;
 }
 
 /*_________________________tabs wrapper_________________________________________________*/
