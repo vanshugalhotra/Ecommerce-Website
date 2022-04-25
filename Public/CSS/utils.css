@@ -199,6 +199,7 @@ body{
     padding: 10px 40px;
     cursor: pointer;
     transition: all .3s;
+    border: none;
 }
 
 .sqaure-btn:hover{
@@ -243,7 +244,7 @@ body{
     line-height: 1.2rem;
     color: #333;
     background-color: transparent;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #e6e2e2;
     padding: 1rem;
     width: 100%;
     margin-top: 1rem;
@@ -545,7 +546,7 @@ body{
     margin-top: 3rem;
 }
 
-.product-buttons .addCart-btn{
+.quick-view-add-cart-btn{
     margin-top: 3rem;
 }
 
