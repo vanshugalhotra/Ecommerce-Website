@@ -3,6 +3,7 @@ const path = require('path');
 const home = require('./routes/home');
 const connectDB = require('./db/connect');
 require('dotenv').config();
+const notFound = require('./middlewares/not_found');
 
 const app = express();
 const port = 5500;
@@ -11,6 +12,9 @@ const port = 5500;
 app.use(express.static(path.join(__dirname, "Public")));
 
 app.use('/', home); // * adding the home route
+
+// for every other route, which we did'nt declared, or we can say 404
+app.use(notFound); // using the notFound middleware
 
 // connecting to the database
 const start = async ()=>{
