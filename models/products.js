@@ -19,7 +19,12 @@ const ProductsSchema = new mongoose.Schema({
     },
     image: {
         type: String,
-        default: '/img/Products/1.jpg'
+        default: '/def/def.jpg'
+    },
+    
+    small_Images: {
+        type: [String],
+        default: ['/def/s1.jpg', '/def/s2.jpg','/def/s3.jpg','/def/s4.jpg','/def/s5.jpg']
     },
     category: {
         type: [String],
