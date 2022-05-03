@@ -20,5 +20,6 @@ const deleteProduct = async (req, res)=>{
 }
 
 module.exports = {
-    getAllProducts, createProduct
+    getAllProducts, createProduct,
+    getSingleProduct, updateProduct, deleteProduct
 }
