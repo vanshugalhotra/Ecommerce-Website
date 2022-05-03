@@ -354,7 +354,7 @@ body {
 
 .product-desc {
     margin-top: -20px;
-    margin-right: 60%;
+    align-self: flex-start;
 }
 
 .product-desc a {
@@ -382,6 +382,7 @@ body {
     font-weight: 600;
     letter-spacing: .1em;
     position: relative;
+    display: inline;
 }
 
 .product-desc .name-text::after {
