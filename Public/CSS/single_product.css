@@ -97,6 +97,8 @@
 
 .product-content .product-others .type-head .type-value {
     font-weight: 500 !important;
+    text-transform: capitalize;
+    letter-spacing: .3px;
 }
 
 

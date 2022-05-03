@@ -2,7 +2,7 @@ const insertProduct = (insertInto, data) => {
     const product_item_HTML = `                
     <div class="product-img-content">
         <div class="product-img img-div zoom-img-div">
-            <a href="../HTML/single_product.html${data._id}"><img src="${data.image}" alt="" width="800"
+            <a href="../HTML/single_product.html?id=${data._id}"><img src="${data.image}" alt="" width="800"
                     height="1024"></a>
         </div>
         <div class="product-funcs">
@@ -19,7 +19,7 @@ const insertProduct = (insertInto, data) => {
     </div>
     <div class="product-desc">
         <a href="#" class="cat-text font2">${data.category[0]}</a>
-        <a href="../HTML/single_product.html${data._id}" class="name-text font2">${data.name}</a>
+        <a href="../HTML/single_product.html?id=${data._id}" class="name-text font2">${data.name}</a>
         <a href="#" class="price-text font2">$${data.price}</a>
     </div>
     `;
@@ -36,11 +36,11 @@ const insertSmallProds = (insertInto, data) => {
     var prod_opt_HTML = `
 
     <div class="prod-opt-img img-div">
-        <a href="./HTML/single_product.html${data._id}"></a><img src="${data.image}" alt="" width="100"
+        <a href="./HTML/single_product.html?id=${data._id}"></a><img src="${data.image}" alt="" width="100"
             height="108"></a>
     </div>
     <div class="prod-opt-desc">
-        <a href="./HTML/single_product.html${data._id}" class="td-none">
+        <a href="./HTML/single_product.html?id=${data._id}" class="td-none">
             <h3 class="prod-opt-name pink-hover">
             ${data.name} &nbsp &nbsp &nbsp $${data.price}
             </h3>

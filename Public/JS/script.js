@@ -1,5 +1,4 @@
 // getting the active nav-items and changing when we click on them
-
 // getting the container element, ul
 const nav_ul = document.getElementById('nav-items-ul');
 
@@ -33,23 +32,27 @@ themeBtn.addEventListener('click', () => {
 
 // *___________________________________code for quantity picker___________
 
-const quantiy_input = document.getElementById('quantity'); // getting the quantity from input box
-const minusBtn = document.getElementById('minus-btn');
-const plusBtn = document.getElementById('plus-btn');
+const counter = function () {
 
-if (quantiy_input && minusBtn && plusBtn) {
-    var quantity = parseInt(quantiy_input.value); // converting the input value (string) to int
+    const quantiy_input = document.getElementById('quantity'); // getting the quantity from input box
+    const minusBtn = document.getElementById('minus-btn');
+    const plusBtn = document.getElementById('plus-btn');
 
-    plusBtn.addEventListener('click', () => {
-        quantity += 1;
-        quantiy_input.value = quantity;
-    });
+    if (quantiy_input && minusBtn && plusBtn) {
+        var quantity = parseInt(quantiy_input.value); // converting the input value (string) to int
 
-    minusBtn.addEventListener('click', () => {
-        if (quantity != 1) { // if quantity is already one, dont need to decrement it
-            quantity -= 1;
+        plusBtn.addEventListener('click', () => {
+            quantity += 1;
             quantiy_input.value = quantity;
-        }
-    });
+        });
 
+        minusBtn.addEventListener('click', () => {
+            if (quantity != 1) { // if quantity is already one, dont need to decrement it
+                quantity -= 1;
+                quantiy_input.value = quantity;
+            }
+        });
+
+    }
 }
+counter()

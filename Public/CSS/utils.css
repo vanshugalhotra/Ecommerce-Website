@@ -453,6 +453,19 @@ body {
     font-family: "Font Awesome 5 Free";
 }
 
+.star-1 span::before{
+    content: "\f005" !important;
+}
+.star-2 span::before{
+    content: "\f005\f005" !important;
+}
+.star-3 span::before{
+    content: "\f005\f005\f005" !important;
+}
+.star-4 span::before{
+    content: "\f005\f005\f005\f005" !important;
+}
+
 .single-product-desc .star-rating span::before {
     /* this one for filling the stars */
     content: "\f005\f005\f005\f005\f005";

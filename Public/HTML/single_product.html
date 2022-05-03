@@ -9,7 +9,6 @@
     <link rel="icon" type="image/x-icon" href="../img/Icons/favicon.png">
     <link rel="stylesheet" href="../CSS/utils.css">
     <link rel="stylesheet" href="../CSS/style.css">
-    <!-- <link rel="stylesheet" href="../CSS/products.css"> -->
     <link rel="stylesheet" href="../CSS/single_product.css">
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 </head>
@@ -34,39 +33,25 @@
         </div>
     </nav>
 
-    <div class="product-details">
+    <div class="product-details" id="single-page">
         <div class="product-img">
-            <div class="small-left">
-                <div class="small-img img-div">
-                    <img src="../img/Products/1.jpg" alt="" width="600" height="768">
-                </div>
-                <div class="small-img img-div">
-                    <img src="../img/Products/1.jpg" alt="" width="600" height="768">
-                </div>
-                <div class="small-img img-div">
-                    <img src="../img/Products/1.jpg" alt="" width="600" height="768">
-                </div>
-                <div class="small-img img-div">
-                    <img src="../img/Products/1.jpg" alt="" width="600" height="768">
-                </div>
-                <div class="small-img img-div">
-                    <img src="../img/Products/1.jpg" alt="" width="600" height="768">
-                </div>
+            <div class="small-left" id="small-imgs">
             </div>
             <div class="big-img img-div">
-                <img src="../img/Products/1.jpg" alt="" width="800" height="1024">
+                <img src="" alt="" width="800" height="1024" id="single-product-big-img">
             </div>
         </div>
         <div class="product-content">
             <div class="single-product-desc">
-                <h2 class="product-desc-text">Black Coat</h2>
-                <h3 class="product-desc-text">$350.00</h3>
-                <div class="star-rating">
+                <h2 class="product-desc-text" id="single-product-name"></h2>
+                <h3 class="product-desc-text" id="single-product-price"></h3>
+
+                <div class="star-rating" id="single-product-rating">
                     <span></span>
                 </div>
+                
                 <div class="product-desc-p">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis exercitationem fugit aperiam
-                        reprehenderit ratione quisquam rem possimus saepe mollitia optio.</p>
+                    <p id="single-product-desc"></p>
                 </div>
             </div>
             <div class="product-buttons">
@@ -97,20 +82,20 @@
             <div class="product-others">
                 <span class="type-head">
                     SKU:
-                    <span class="type-value">
+                    <span class="type-value" id="single-product-sku">
                         21
                     </span>
                 </span>
                 <span class="type-head">
                     Categories:
                     <span class="type-value">
-                        <a href="" class="td-none pink-hover">Clothes</a>
+                        <a href="" class="td-none pink-hover" id="single-product-categories"></a>
                     </span>
                 </span>
                 <span class="type-head">
                     Tags:
                     <span class="type-value">
-                        <a href="" class="td-none pink-hover">Women</a>
+                        <a href="" class="td-none pink-hover" id="single-product-tags"></a>
                     </span>
                 </span>
             </div>
@@ -211,134 +196,8 @@
             </div>
 
             <div id="more-products-content">
-                <div class="related-product-items add-quick-view">
+                <div class="related-product-items add-quick-view" id="more-product-items-single">
                     
-                    <div class="product-item">
-
-                        <div class="product-img-content">
-                            <div class="product-img img-div zoom-img-div">
-                                <a href="../HTML/single_product.html"><img src="../img/Products/1.jpg" alt="" width="800"
-                                        height="1024"></a>
-                            </div>
-                            <div class="product-funcs">
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/plus.svg" alt="Plus">
-                                </a>
-                                <a href="#" class="product-func-icon center-icon eye-icon">
-                                    <img src="../img/Icons/eye.svg" alt="See">
-                                </a>
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/heart.svg" alt="Like">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-desc">
-                            <a href="#" class="cat-text font2">Clothes</a>
-                            <a href="#" class="name-text font2">Black Coat</a>
-                            <a href="#" class="price-text font2">$350.00</a>
-                        </div>
-                    </div>
-                    <div class="product-item">
-        
-                        <div class="product-img-content">
-                            <div class="product-img img-div zoom-img-div">
-                                <a href="../HTML/single_product.html"> <img src="../img/Products/20.jpg" alt="" width="800"
-                                        height="1024"> </a>
-                            </div>
-                            <div class="product-funcs">
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/plus.svg" alt="Plus">
-                                </a>
-                                <a href="#" class="product-func-icon center-icon eye-icon">
-                                    <img src="../img/Icons/eye.svg" alt="See">
-                                </a>
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/heart.svg" alt="Like">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-desc">
-                            <a href="#" class="cat-text font2">Clothes</a>
-                            <a href="#" class="name-text font2">Black Coat</a>
-                            <a href="#" class="price-text font2">$350.00</a>
-                        </div>
-                    </div>
-                    <div class="product-item">
-        
-                        <div class="product-img-content">
-                            <div class="product-img img-div zoom-img-div">
-                                <a href="../HTML/single_product.html"> <img src="../img/Products/12.jpg" alt="" width="800"
-                                        height="1024"></a>
-                            </div>
-                            <div class="product-funcs">
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/plus.svg" alt="Plus">
-                                </a>
-                                <a href="#" class="product-func-icon center-icon eye-icon">
-                                    <img src="../img/Icons/eye.svg" alt="See">
-                                </a>
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/heart.svg" alt="Like">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-desc">
-                            <a href="#" class="cat-text font2">Clothes</a>
-                            <a href="#" class="name-text font2">Black Coat</a>
-                            <a href="#" class="price-text font2">$350.00</a>
-                        </div>
-                    </div>
-                    <div class="product-item">
-        
-                        <div class="product-img-content">
-                            <div class="product-img img-div zoom-img-div">
-                                <a href="../HTML/single_product.html"> <img src="../img/Products/10.jpg" alt="" width="800"
-                                        height="1024"></a>
-                            </div>
-                            <div class="product-funcs">
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/plus.svg" alt="Plus">
-                                </a>
-                                <a href="#" class="product-func-icon center-icon eye-icon">
-                                    <img src="../img/Icons/eye.svg" alt="See">
-                                </a>
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/heart.svg" alt="Like">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-desc">
-                            <a href="#" class="cat-text font2">Clothes</a>
-                            <a href="#" class="name-text font2">Black Coat</a>
-                            <a href="#" class="price-text font2">$350.00</a>
-                        </div>
-                    </div>
-                    <div class="product-item">
-        
-                        <div class="product-img-content">
-                            <div class="product-img img-div zoom-img-div">
-                                <a href="../HTML/single_product.html"><img src="../img/Products/11.jpg" alt="" width="800"
-                                        height="1024"></a>
-                            </div>
-                            <div class="product-funcs">
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/plus.svg" alt="Plus">
-                                </a>
-                                <a href="#" class="product-func-icon center-icon eye-icon">
-                                    <img src="../img/Icons/eye.svg" alt="See">
-                                </a>
-                                <a href="#" class="product-func-icon">
-                                    <img src="../img/Icons/heart.svg" alt="Like">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-desc">
-                            <a href="#" class="cat-text font2">Clothes</a>
-                            <a href="#" class="name-text font2">Black Coat</a>
-                            <a href="#" class="price-text font2">$350.00</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
@@ -364,128 +223,25 @@
         <div class="related-heading center">
             <p class="wrapper-a">Related Products</p>
         </div>
-        <div class="related-product-items add-quick-view">
-            <div class="product-item">
-
-                <div class="product-img-content">
-                    <div class="product-img img-div zoom-img-div related-img">
-                        <a href="../HTML/single_product.html"><img src="../img/Products/11.jpg" alt="" width="800"
-                                height="1024"></a>
-                    </div>
-                    <div class="product-funcs">
-                        <a href="#" class="product-func-icon">
-                            <img src="../img/Icons/plus.svg" alt="Plus">
-                        </a>
-                        <a href="#" class="product-func-icon center-icon eye-icon">
-                            <img src="../img/Icons/eye.svg" alt="See">
-                        </a>
-                        <a href="#" class="product-func-icon">
-                            <img src="../img/Icons/heart.svg" alt="Like">
-                        </a>
-                    </div>
-                </div>
-                <div class="product-desc">
-                    <a href="#" class="cat-text font2">Clothes</a>
-                    <a href="#" class="name-text font2">Black Coat</a>
-                    <a href="#" class="price-text font2">$350.00</a>
-                </div>
-            </div>
-            <div class="product-item">
-
-                <div class="product-img-content">
-                    <div class="product-img img-div zoom-img-div related-img">
-                        <a href="../HTML/single_product.html"> <img src="../img/Products/7.jpg" alt="" width="800"
-                                height="1024"></a>
-                    </div>
-                    <div class="product-funcs">
-                        <a href="#" class="product-func-icon">
-                            <img src="../img/Icons/plus.svg" alt="Plus">
-                        </a>
-                        <a href="#" class="product-func-icon center-icon eye-icon">
-                            <img src="../img/Icons/eye.svg" alt="See">
-                        </a>
-                        <a href="#" class="product-func-icon">
-                            <img src="../img/Icons/heart.svg" alt="Like">
-                        </a>
-                    </div>
-                </div>
-                <div class="product-desc">
-                    <a href="#" class="cat-text font2">Clothes</a>
-                    <a href="#" class="name-text font2">Black Coat</a>
-                    <a href="#" class="price-text font2">$350.00</a>
-                </div>
-            </div>
-            <div class="product-item">
-
-                <div class="product-img-content">
-                    <div class="product-img img-div zoom-img-div related-img">
-                        <a href="../HTML/single_product.html"><img src="../img/Products/30.jpg" alt="" width="800"
-                                height="1024"></a>
-                    </div>
-                    <div class="product-funcs">
-                        <a href="#" class="product-func-icon">
-                            <img src="../img/Icons/plus.svg" alt="Plus">
-                        </a>
-                        <a href="#" class="product-func-icon center-icon eye-icon">
-                            <img src="../img/Icons/eye.svg" alt="See">
-                        </a>
-                        <a href="#" class="product-func-icon">
-                            <img src="../img/Icons/heart.svg" alt="Like">
-                        </a>
-                    </div>
-                </div>
-                <div class="product-desc">
-                    <a href="#" class="cat-text font2">Clothes</a>
-                    <a href="#" class="name-text font2">Black Coat</a>
-                    <a href="#" class="price-text font2">$350.00</a>
-                </div>
-            </div>
-            <div class="product-item">
-
-                <div class="product-img-content">
-                    <div class="product-img img-div zoom-img-div related-img">
-                        <a href="../HTML/single_product.html"><img src="../img/Products/15.jpg" alt="" width="800"
-                                height="1024"></a>
-                    </div>
-                    <div class="product-funcs">
-                        <a href="#" class="product-func-icon">
-                            <img src="../img/Icons/plus.svg" alt="Plus">
-                        </a>
-                        <a href="#" class="product-func-icon center-icon eye-icon">
-                            <img src="../img/Icons/eye.svg" alt="See">
-                        </a>
-                        <a href="#" class="product-func-icon">
-                            <img src="../img/Icons/heart.svg" alt="Like">
-                        </a>
-                    </div>
-                </div>
-                <div class="product-desc">
-                    <a href="#" class="cat-text font2">Clothes</a>
-                    <a href="#" class="name-text font2">Black Coat</a>
-                    <a href="#" class="price-text font2">$350.00</a>
-                </div>
-            </div>
-
+        <div class="related-product-items add-quick-view" id="related-product-items-single">
         </div>
     </div>
 
-    <div class="quick-view">
+    <section class="quick-view">
         <div class="quick-view-content center-div">
             <div class="quick-img img-div">
-                <img src="../img/Products/1.jpg" alt="" width="426" height="545">
+                <img src="" alt="" width="426" height="545" id="quick-img">
             </div>
             <div class="quick-desc-content">
                 <div class="quick-desc">
                     <div class="single-product-desc">
-                        <h2 class="product-desc-text">Black Coat</h2>
-                        <h3 class="product-desc-text">$350.00</h3>
+                        <h2 class="product-desc-text" id="quick-name"></h2>
+                        <h3 class="product-desc-text" id="quick-price">$</h3>
                         <div class="star-rating">
                             <span></span>
                         </div>
                         <div class="product-desc-p">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis exercitationem fugit
-                                aperiam
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo.</p>
+                            <p id="quick-desc"></p>
                         </div>
                     </div>
                     <div class="product-buttons">
@@ -510,10 +266,12 @@
                 <img src="../img/Icons/cross.svg" alt="Close">
             </div>
         </div>
-    </div>
-    <script src="../JS/script.js"></script>
-    <script src="../JS/single_product.js"></script>
-    <script src="../JS/quick_view.js"></script>
+    </section>
+
+    <script async src="../JS/script.js"></script>
+    <script async src="../JS/API_js.js" type="module"></script>
+    <script async src="../JS/quick_view.js"></script>
+    <script async src="../JS/single_product.js"></script>
 
 </body>
 
