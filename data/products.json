@@ -1,0 +1,270 @@
+[
+    {
+        "name": "Green Blazer",
+        "price": 245,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/1/1.jpg",
+        "small_Images": ["/1/s1.jpg", "/1/s2.jpg","/1/s3.jpg","/1/s4.jpg","/1/s5.jpg"],
+        "category": ["clothes", "Men", "Stylish"],
+        "tags": ["clothes","men", "coats", "fashion"],
+        "inventory": 100,
+        "rating": 5,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 9,
+            "weight": "800 gm",
+            "Dimensions" : "70 x 30 x 70 cm"
+        }
+    },
+    {
+        "name": "Brown Coat",
+        "price": 315,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/2/2.jpg",
+        "small_Images": ["/2/s1.jpg", "/2/s2.jpg","/2/s3.jpg","/2/s4.jpg","/2/s5.jpg"],
+        "category": ["clothes", "Women"],
+        "tags": ["clothes","women", "coats", "fashion"],
+        "inventory": 100,
+        "rating": 5,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 9,
+            "weight": "800 gm",
+            "Dimensions" : "70 x 30 x 70 cm",
+            "composition": "wool"
+        }
+    },
+    {
+        "name": "A line Skirt",
+        "price": 70,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/3/3.jpg",
+        "small_Images": ["/3/s1.jpg", "/3/s2.jpg","/3/s3.jpg","/3/s4.jpg","/3/s5.jpg"],
+        "category": ["clothes", "women", "Skirt"],
+        "tags": ["clothes","women", "skirt", "fashion"],
+        "inventory": 20,
+        "rating": 4,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 91,
+            "weight": "200 gm",
+            "Dimensions" : "20 x 30 x 70 cm"
+        }
+    },
+    {
+        "name": "Ochre Shirt",
+        "price": 18,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/4/4.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["clothes", "Men", "shirt"],
+        "tags": ["clothes","men", "shirt", "fashion"],
+        "inventory": 10,
+        "rating": 3,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 29,
+            "weight": "200 gm",
+            "Dimensions" : "70 x 30 x 70 cm"
+        }
+    },
+    {
+        "name": "Flowing Blouse",
+        "price": 75,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/5/5.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["clothes", "women", "blouse"],
+        "tags": ["clothes","women","fashion"],
+        "inventory": 12,
+        "rating": 5,
+        "numberOfReviews": 4,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 21,
+            "weight": "150 gm",
+            "Dimensions" : "70 x 30 x 70 cm"
+        }
+    },
+    {
+        "name": "Slip Skirt",
+        "price": 128,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/6/6.jpg",
+        "small_Images": ["/6/s1.jpg", "/6/s2.jpg","/6/s3.jpg","/6/s4.jpg","/6/s5.jpg"],
+        "category": ["clothes", "women", "skirt"],
+        "tags": ["clothes","women", "skirt", "fashion"],
+        "inventory": 6,
+        "rating": 5,
+        "numberOfReviews": 2,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 29,
+            "weight": "200 gm",
+            "Dimensions" : "70 x 30 x 70 cm",
+            "composition": "cotton"
+        }
+    },
+    {
+        "name": "Pink Coat",
+        "price": 258,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/8.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["clothes", "women", "coat"],
+        "tags": ["clothes","women","fashion"],
+        "inventory": 31,
+        "rating": 4,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 29,
+            "weight": "200 gm",
+            "Dimensions" : "70 x 30 x 70 cm"
+        }
+    },
+    {
+        "name": "White Top",
+        "price": 38,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/9.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["clothes", "women"],
+        "tags": ["clothes","women","fashion"],
+        "inventory": 20,
+        "rating": 2,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 29,
+            "weight": "200 gm",
+            "Dimensions" : "70 x 30 x 70 cm"
+        }
+    },
+    {
+        "name": "Trench Coat",
+        "price": 125,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/10.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["clothes", "women", "coat"],
+        "tags": ["clothes","women","fashion"],
+        "inventory": 20,
+        "rating": 4,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 29,
+            "weight": "200 gm",
+            "Dimensions" : "70 x 30 x 70 cm"
+        }
+    },
+    {
+        "name": "Fringe Vest",
+        "price": 51,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/11.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["clothes", "women"],
+        "tags": ["clothes","women","fashion"],
+        "inventory": 20,
+        "rating": 4,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 29,
+            "weight": "200 gm",
+            "Dimensions" : "70 x 30 x 70 cm"
+        }
+    },
+    {
+        "name": "Travel Bag",
+        "price": 18,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/12.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["Bags", "travel"],
+        "tags": ["bags", "new"],
+        "inventory": 20,
+        "rating": 4,
+        "featured": true,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 29,
+            "weight": "200 gm"
+        }
+    },
+    {
+        "name": "Leather Watch",
+        "price": 358,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/14.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["Accessories", "watch"],
+        "tags": ["Accessories","watch","fashion"],
+        "inventory": 20,
+        "rating": 5,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 29,
+            "weight": "200 gm"
+        }
+    },
+    {
+        "name": "Black Blazer",
+        "price": 538,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/15.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["clothes", "men", "blazers"],
+        "tags": ["clothes","men","fashion"],
+        "inventory": 5,
+        "rating": 5,
+        "numberOfReviews": 1,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 6,
+            "weight": "900 gm",
+            "Dimensions" : "70 x 30 x 70 cm"
+        }
+    },
+    {
+        "name": "Classic Wallet",
+        "price": 21,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/16.jpg",
+        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
+        "category": ["accessories", "men"],
+        "tags": ["accessories","men"],
+        "inventory": 20,
+        "rating": 4,
+        "featured": true,
+        "numberOfReviews": 4,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 29,
+            "weight": "200 gm",
+            "Dimensions" : "70 x 30 x 70 cm"
+        }
+    }
+]

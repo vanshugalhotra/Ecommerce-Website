@@ -1,12 +1,23 @@
 const Products = require('../models/products'); // importing the products database model
 const StatusCodes = require('http-status-codes');
 const CustomError = require('../errors');
+const path = require('path');
+
+const img_path = '../img/Products';
 
 const getAllProducts = async (req, res) => {
     const products = await (Products.find({}));
     res.status(StatusCodes.OK).json({ nbHits: products.length, products })
 }
 const createProduct = async (req, res) => {
+
+    // *changing image paths, 
+    req.body.image = path.join(img_path, req.body.image);
+
+    req.body.small_Images = req.body.small_Images.map((element) => {
+        return path.join(img_path, element);
+    })
+
     const product = await Products.create(req.body);
     res.status(StatusCodes.CREATED).json({ product });
 }
@@ -36,7 +47,7 @@ const deleteProduct = async (req, res) => {
     if (!product) {
         throw new CustomError.NotFoundError(`No product with id : ${productID}`);
     }
-    res.status(StatusCodes.OK).json({deleted: true});
+    res.status(StatusCodes.OK).json({ deleted: true });
 }
 
 module.exports = {

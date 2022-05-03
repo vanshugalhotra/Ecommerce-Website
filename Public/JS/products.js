@@ -11,9 +11,6 @@ const getAPIdata = async (url) => {
     }
 }
 
-// const all_products_container = document.createElement('div');
-// all_products_container.classList = np"all-product-items add-quick-view";
-
 const all_products_container = document.getElementById('all-products-container')
 
 const insertProduct = (insertInto, data) => {
@@ -36,8 +33,8 @@ const insertProduct = (insertInto, data) => {
         </div>
     </div>
     <div class="product-desc">
-        <a href="#" class="cat-text font2">${data.category.toString()}</a>
-        <a href="../HTML/single_product.html" class="name-text font2">${data.name}</a>
+        <a href="#" class="cat-text font2">${data.category[0]}</a>
+        <a href="../HTML/single_product.html${data._id}" class="name-text font2">${data.name}</a>
         <a href="#" class="price-text font2">$${data.price}</a>
     </div>
     `;
