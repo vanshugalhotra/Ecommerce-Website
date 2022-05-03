@@ -1,18 +1,3 @@
-var allProducts = {};
-
-const getAPIdata = async (url) => {
-    try {
-        const response = await fetch(url)
-        return await response.json();
-
-    }
-    catch (error) {
-        console.log(error);
-    }
-}
-
-const all_products_container = document.getElementById('all-products-container')
-
 const insertProduct = (insertInto, data) => {
     const product_item_HTML = `                
     <div class="product-img-content">
@@ -24,7 +9,7 @@ const insertProduct = (insertInto, data) => {
             <a href="#" class="product-func-icon">
                 <img src="../img/Icons/plus.svg" alt="Plus">
             </a>
-            <a href="#" class="product-func-icon center-icon eye-icon">
+            <a href="#" class="product-func-icon center-icon eye-icon" id="${data._id}">
                 <img src="../img/Icons/eye.svg" alt="See">
             </a>
             <a href="#" class="product-func-icon">
@@ -46,10 +31,34 @@ const insertProduct = (insertInto, data) => {
 
 }
 
-getAPIdata('/api/v1/products').then((allProducts) => {
+const insertSmallProds = (insertInto, data) => {
 
-    for (eachProduct of allProducts.products) {
+    var prod_opt_HTML = `
 
-        insertProduct(all_products_container, eachProduct);
-    }
-})
+    <div class="prod-opt-img img-div">
+        <a href="./HTML/single_product.html${data._id}"></a><img src="${data.image}" alt="" width="100"
+            height="108"></a>
+    </div>
+    <div class="prod-opt-desc">
+        <a href="./HTML/single_product.html${data._id}" class="td-none">
+            <h3 class="prod-opt-name pink-hover">
+            ${data.name} &nbsp &nbsp &nbsp $${data.price}
+            </h3>
+        </a>
+        <a href="" class="td-none">
+            <h4 class="prod-opt-cat">
+                ${data.category.toString()}
+            </h4>
+        </a>
+    </div>
+
+    `;
+    const productItem = document.createElement('div');
+    productItem.classList = "prod-opt-single-prod";
+    productItem.innerHTML += prod_opt_HTML;
+
+    insertInto.appendChild(productItem);
+    console.log("inserted");
+    
+}
+export { insertProduct, insertSmallProds };

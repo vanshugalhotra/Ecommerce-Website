@@ -63,23 +63,22 @@
         </div>
 
     </section>
-    <!-- <div class="quick-view">
+
+    <section class="quick-view">
         <div class="quick-view-content center-div">
             <div class="quick-img img-div">
-                <img src="../img/Products/1.jpg" alt="" width="426" height="545">
+                <img src="" alt="" width="426" height="545" id="quick-img">
             </div>
             <div class="quick-desc-content">
                 <div class="quick-desc">
                     <div class="single-product-desc">
-                        <h2 class="product-desc-text">Black Coat</h2>
-                        <h3 class="product-desc-text">$350.00</h3>
+                        <h2 class="product-desc-text" id="quick-name"></h2>
+                        <h3 class="product-desc-text" id="quick-price">$</h3>
                         <div class="star-rating">
                             <span></span>
                         </div>
                         <div class="product-desc-p">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis exercitationem fugit
-                                aperiam
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo.</p>
+                            <p id="quick-desc"></p>
                         </div>
                     </div>
                     <div class="product-buttons">
@@ -104,7 +103,8 @@
                 <img src="../img/Icons/cross.svg" alt="Close">
             </div>
         </div>
-    </div> -->
+    </section>
+
     <section class="shipping">
 
         <div class="shipping-content">
@@ -123,9 +123,9 @@
             <img src="../img/footer.jpg" alt="Free Shipping World Wide">
         </div>
     </section>
-    <script src="../JS/script.js"></script>
-    <!-- <script src="../JS/quick_view.js"></script> -->
-    <script src="../JS/products.js"></script>
+    <script defer src="../JS/API_js.js" type="module"></script>
+    <script defer src="../JS/quick_view.js"></script>
+    <script defer src="../JS/script.js"></script>
 
 </body>
 

@@ -292,6 +292,18 @@ html {
     font-family: var(--font1);
 }
 
+.prod-opt-divs{
+    width: 27vw;
+}
+
+.prod-opt-single-prod{
+    justify-content: flex-start;
+}
+
+.prod-opt-img{
+    margin: 10px 0 !important;
+}
+
 .prod-opt-img img{
     max-width: 60px;
     max-height: 65px;
@@ -316,8 +328,9 @@ html {
     font-size: 12px;
     line-height: 1.6em;
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: 0.2px;
     color: var(--color-grey-5);
+    text-transform: capitalize;
 }
 
 .prod-trending-img img:hover{

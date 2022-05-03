@@ -238,6 +238,7 @@
         "tags": ["clothes","men","fashion"],
         "inventory": 5,
         "rating": 5,
+        "featured": true,
         "numberOfReviews": 1,
         "colors": ["#222"],
         "sizes": ["M", "L", "XL","XXL"],
