@@ -5,10 +5,68 @@ const path = require('path');
 
 const img_path = '../img/Products';
 
+
 const getAllProducts = async (req, res) => {
-    const products = await (Products.find({}));
+
+    // applying qureies to our search
+    const { featured, sale, name, numericFilters, categories} = req.query;
+
+    var queryObject = {};
+
+    if (featured) {
+        queryObject.featured = featured === 'true' ? true : false;
+    }
+
+    if (sale) {
+        queryObject.sale = sale === 'true' ? true : false;
+    }
+
+    if (name) {
+        queryObject.name = { $regex: name, $options: 'i' }; // to make search case insensitive
+    }
+
+    if(categories){
+        queryObject.$or = []
+
+        categories.split(',').forEach((cat)=>{
+            let obj = {category: cat};
+            queryObject.$or.push(obj)
+        })
+
+        console.log(queryObject);
+    }
+
+    if (numericFilters) {
+        const operatorMap = {
+            '>': '$gt',
+            '>=': '$gte',
+            '=': '$eq',
+            '<': '$lt',
+            '<=': '$lte',
+        };
+        const regEx = /\b(<|>|>=|=|<|<=)\b/g;
+        let filters = numericFilters.replace(
+            regEx,
+            (match) => `-${operatorMap[match]}-`
+        );
+        const options = ['price', 'rating'];
+        filters = filters.split(',').forEach((item) => {
+            const [field, operator, value] = item.split('-');
+            if (options.includes(field)) {
+                queryObject[field] = { [operator]: Number(value) };
+            }
+        });
+    }
+
+    // fetching the values
+
+    let result = Products.find(queryObject)
+
+    const products = await result;
     res.status(StatusCodes.OK).json({ nbHits: products.length, products })
 }
+
+
 const createProduct = async (req, res) => {
 
     // *changing image paths, 

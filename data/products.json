@@ -105,6 +105,7 @@
         "tags": ["clothes","women", "skirt", "fashion"],
         "inventory": 6,
         "rating": 5,
+        "sale": true,
         "numberOfReviews": 2,
         "colors": ["#222"],
         "sizes": ["M", "L", "XL","XXL"],
@@ -125,6 +126,7 @@
         "tags": ["clothes","women","fashion"],
         "inventory": 31,
         "rating": 4,
+        "sale": true,
         "numberOfReviews": 1,
         "colors": ["#222"],
         "sizes": ["M", "L", "XL","XXL"],
@@ -164,6 +166,7 @@
         "inventory": 20,
         "rating": 4,
         "numberOfReviews": 1,
+        "sale": true,
         "colors": ["#222"],
         "sizes": ["M", "L", "XL","XXL"],
         "otherInfo": {

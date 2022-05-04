@@ -55,6 +55,10 @@ const ProductsSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     },
+    sale:{
+        type: Boolean,
+        default: false
+    },
     sizes:{
         type: [String],
         default: ["M", "L", "XL", "XXL"],

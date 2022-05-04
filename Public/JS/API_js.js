@@ -43,11 +43,11 @@ const featured = document.getElementById('featured');
 const sale = document.getElementById('sale');
 
 if (featured) {
-    insertData(featured, getAPIdata('/api/v1/products'), 3, insertSmallProds);
+    insertData(featured, getAPIdata('/api/v1/products?featured=true'), 3, insertSmallProds);
 }
 
 if (sale) {
-    insertData(sale, getAPIdata('/api/v1/products'), 3, insertSmallProds);
+    insertData(sale, getAPIdata('/api/v1/products?sale=true'), 3, insertSmallProds);
 }
 
 //__________________________Single Product stuff_________________________________________________
