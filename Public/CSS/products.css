@@ -17,6 +17,27 @@
 
 #products {
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filters-form{
+    margin-top: 3rem;
+    display: flex;
+    width: 40vw;
+}
+
+.filter-form-control{
+    height: 50px;
+    margin-top: 0;
+    margin-right: 1.5rem;
+}
+
+.filters-form input[type=submit]{
+    margin: 0;
+    height: 50px;
 }
 
 .all-product-items {

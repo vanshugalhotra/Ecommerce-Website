@@ -18,7 +18,7 @@ const insertProduct = (insertInto, data) => {
         </div>
     </div>
     <div class="product-desc">
-        <a href="#" class="cat-text font2">${data.category[0]}</a>
+        <a href="../HTML/products.html?categories=${data.category[0]}" class="cat-text font2">${data.category[0]}</a>
         <a href="../HTML/single_product.html?id=${data._id}" class="name-text font2">${data.name}</a>
         <a href="#" class="price-text font2">$${data.price}</a>
     </div>

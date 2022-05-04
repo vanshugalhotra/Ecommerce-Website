@@ -34,7 +34,7 @@ const insertData = (insertInto, promise, toShow, insertionFunction) => {
 if (all_products_container) {
     const params = window.location.search;
     console.log(params);
-    
+
     let apiURL = `/api/v1/products${params}`;
     insertData(all_products_container, getAPIdata(apiURL), 13, insertProduct);
 }
@@ -92,6 +92,7 @@ if (single_page) { // ? if single_product.html exists
         single_product_desc.innerText = productObj.description;
         single_product_sku.innerText = productObj.otherInfo.sku;
         single_product_categories.innerText = productObj.category.toString();
+        single_product_categories.href = `../HTML/products.html?categories=${productObj.category.toString()}`;
         single_product_tags.innerText = productObj.tags.toString();
 
         single_product_rating.classList += ` star-${productObj.rating}`;
