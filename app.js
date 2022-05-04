@@ -3,10 +3,16 @@ require('express-async-errors'); // our error handler,
 
 const express = require('express');
 const path = require('path');
+
+// routers
 const productsRouter = require('./routes/products');
+const authRouter = require('./routes/auth');
+// db
 const connectDB = require('./db/connect');
+// middleware
 const notFound = require('./middlewares/not_found');
 const errorHandlerMiddleware = require('./middlewares/errorHandler');
+const authenticateUser = require('./middlewares/authentication');
 
 const app = express();
 
@@ -14,7 +20,9 @@ const app = express();
 app.use(express.static(path.join(__dirname, "Public")));
 
 app.use(express.json())
+app.use(express.urlencoded({extended: true})); // to get the data from forms
 
+app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/products', productsRouter);
 
 app.use(notFound); // using the notFound middleware
