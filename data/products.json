@@ -270,5 +270,97 @@
             "weight": "200 gm",
             "Dimensions" : "70 x 30 x 70 cm"
         }
+    },
+    {
+        "name": "Black Heals",
+        "price": 211,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/23/23.jpg",
+        "small_Images": ["/23/s1.jpg", "/23/s2.jpg","/23/s3.jpg","/23/s4.jpg","/23/s5.jpg"],
+        "category": ["footwear", "women"],
+        "tags": ["footwear","women"],
+        "inventory": 2,
+        "rating": 4,
+        "featured": true,
+        "sale": true,
+        "numberOfReviews": 4,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 9,
+            "weight": "300 gm"
+        }
+    },
+    {
+        "name": "White Heals",
+        "price": 111,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/24.jpg",
+        "small_Images": ["/24.jpg", "/24.jpg","/24.jpg","/24.jpg","/24.jpg"],
+        "category": ["footwear", "women"],
+        "tags": ["footwear","women"],
+        "inventory": 12,
+        "rating": 4,
+        "numberOfReviews": 4,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 93,
+            "weight": "200 gm"
+        }
+    },
+    {
+        "name": "Casual Shoes",
+        "price": 191,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/18.jpg",
+        "small_Images": ["/18.jpg", "/18.jpg","/18.jpg","/18.jpg","/18.jpg"],
+        "category": ["footwear", "men"],
+        "tags": ["footwear","men"],
+        "inventory": 12,
+        "rating": 4,
+        "numberOfReviews": 4,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 93,
+            "weight": "200 gm"
+        }
+    },
+    {
+        "name": "Cogniac Shoes",
+        "price": 110,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/17.jpg",
+        "small_Images": ["/17.jpg", "/17.jpg","/17.jpg","/17.jpg","/17.jpg"],
+        "category": ["footwear", "men"],
+        "tags": ["footwear","men"],
+        "inventory": 12,
+        "rating": 4,
+        "numberOfReviews": 4,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 93,
+            "weight": "200 gm"
+        }
+    },
+    {
+        "name": "Leather Shoes",
+        "price": 410,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/32.jpg",
+        "small_Images": ["/32.jpg", "/32.jpg","/32.jpg","/32.jpg","/32.jpg"],
+        "category": ["footwear", "men"],
+        "tags": ["footwear","men"],
+        "inventory": 12,
+        "rating": 4,
+        "numberOfReviews": 4,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL","XXL"],
+        "otherInfo": {
+            "sku": 93,
+            "weight": "200 gm"
+        }
     }
 ]

@@ -29,10 +29,11 @@ const getAllProducts = async (req, res) => {
         queryObject.$or = []
 
         categories.split(',').forEach((cat)=>{
+
+            cat = cat.toLowerCase();
             let obj = {category: cat};
             queryObject.$or.push(obj)
         })
-
         console.log(queryObject);
     }
 
@@ -74,6 +75,10 @@ const createProduct = async (req, res) => {
 
     req.body.small_Images = req.body.small_Images.map((element) => {
         return path.join(img_path, element);
+    })
+
+    req.body.category = req.body.category.map((element)=>{
+        return element.toLowerCase();
     })
 
     const product = await Products.create(req.body);

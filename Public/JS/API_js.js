@@ -32,7 +32,11 @@ const insertData = (insertInto, promise, toShow, insertionFunction) => {
 }
 
 if (all_products_container) {
-    insertData(all_products_container, getAPIdata('/api/v1/products'), 13, insertProduct);
+    const params = window.location.search;
+    console.log(params);
+    
+    let apiURL = `/api/v1/products${params}`;
+    insertData(all_products_container, getAPIdata(apiURL), 13, insertProduct);
 }
 
 if (new_products_home) {

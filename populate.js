@@ -13,6 +13,11 @@ for (eachProd of jsonProducts) {
     eachProd.small_Images = eachProd.small_Images.map((element) => {
         return path.join(img_path, element);
     })
+    
+    eachProd.category = eachProd.category.map((element)=>{
+        return element.toLowerCase();
+    })
+
 }
 
 
