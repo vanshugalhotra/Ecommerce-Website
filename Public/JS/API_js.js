@@ -58,13 +58,7 @@ if (sale) {
 const related_product_items_single = document.getElementById('related-product-items-single'); // for single page
 const more_product_items_single = document.getElementById('more-product-items-single'); // for single page
 
-if (related_product_items_single) {
-    insertData(related_product_items_single, getAPIdata('/api/v1/products'), 4, insertProduct);
-}
-
-if (more_product_items_single) {
-    insertData(more_product_items_single, getAPIdata('/api/v1/products'), 6, insertProduct);
-}
+let relURL = `/api/v1/products`;
 
 const single_page = document.getElementById('single-page');
 
@@ -79,11 +73,12 @@ if (single_page) { // ? if single_product.html exists
     const single_product_categories = document.getElementById('single-product-categories');
     const single_product_tags = document.getElementById('single-product-tags');
 
-
     const productID = new URLSearchParams(window.location.search).get('id');
 
     getAPIdata(`/api/v1/products/${productID}`).then((singleProduct) => {
         let productObj = singleProduct.product;
+
+        let cats = productObj.category.toString()
 
         single_product_big_img.src = productObj.image;
 
@@ -91,7 +86,8 @@ if (single_page) { // ? if single_product.html exists
         single_product_price.innerText = `$${productObj.price}`;
         single_product_desc.innerText = productObj.description;
         single_product_sku.innerText = productObj.otherInfo.sku;
-        single_product_categories.innerText = productObj.category.toString();
+        single_product_categories.innerText = cats;
+
         single_product_categories.href = `../HTML/products.html?categories=${productObj.category.toString()}`;
         single_product_tags.innerText = productObj.tags.toString();
 
@@ -113,6 +109,14 @@ if (single_page) { // ? if single_product.html exists
             small_imgs.appendChild(small_img);
         });
 
+        relURL += `?categories=${cats.split(',')[0]}&numericFilters=_id!=${productID}`;
 
+        if (related_product_items_single) {
+            insertData(related_product_items_single, getAPIdata(relURL), 4, insertProduct);
+        }
+
+        if (more_product_items_single) {
+            insertData(more_product_items_single, getAPIdata('/api/v1/products'), 6, insertProduct);
+        }
     })
 }

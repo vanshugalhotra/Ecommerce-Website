@@ -9,7 +9,7 @@ const img_path = '../img/Products';
 const getAllProducts = async (req, res) => {
 
     // applying qureies to our search
-    const { featured, sale, name, numericFilters, categories} = req.query;
+    const { featured, sale, name, numericFilters, categories } = req.query;
 
     var queryObject = {};
 
@@ -25,13 +25,13 @@ const getAllProducts = async (req, res) => {
         queryObject.name = { $regex: name, $options: 'i' }; // to make search case insensitive
     }
 
-    if(categories){
+    if (categories) {
         queryObject.$or = []
 
-        categories.split(',').forEach((cat)=>{
+        categories.split(',').forEach((cat) => {
 
             cat = cat.toLowerCase();
-            let obj = {category: cat};
+            let obj = { category: cat };
             queryObject.$or.push(obj)
         })
         console.log(queryObject);
@@ -44,17 +44,23 @@ const getAllProducts = async (req, res) => {
             '=': '$eq',
             '<': '$lt',
             '<=': '$lte',
+            '!=': '$ne'
         };
-        const regEx = /\b(<|>|>=|=|<|<=)\b/g;
+        const regEx = /\b(<|>|>=|=|<|<=|!=)\b/g;
         let filters = numericFilters.replace(
             regEx,
             (match) => `-${operatorMap[match]}-`
         );
-        const options = ['price', 'rating'];
+        const options = ['price', 'rating', '_id'];
         filters = filters.split(',').forEach((item) => {
             const [field, operator, value] = item.split('-');
             if (options.includes(field)) {
-                queryObject[field] = { [operator]: Number(value) };
+                if (field === '_id') {
+                    queryObject[field] = { [operator]: value }
+                }
+                else {
+                    queryObject[field] = { [operator]: Number(value) };
+                }
             }
         });
     }
@@ -77,7 +83,7 @@ const createProduct = async (req, res) => {
         return path.join(img_path, element);
     })
 
-    req.body.category = req.body.category.map((element)=>{
+    req.body.category = req.body.category.map((element) => {
         return element.toLowerCase();
     })
 
