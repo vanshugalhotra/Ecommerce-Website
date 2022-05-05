@@ -60,7 +60,7 @@
             <h1 class="bold font1 center">Shop The New Collection</h1>
         </div>
         <div class="filter-options">
-            <form method="get" class="filters-form-price" action="../HTML/products.html">
+            <form class="filters-form-price" autocomplete="off">
                 <h3 class="wrapper-a">Filter By Price</h3>
 
                 <div class="price-slider">
@@ -78,22 +78,22 @@
                 <div class="price-btns">
                     <div class="price-range-tags">
                         Price:
-                        <span class="from">
-                            $20
-                        </span>
-                        --
-                        <span class="to">
-                            $500
-                        </span>
+                        $
+                        <input type="text" class="from" value="20" id="min-price">
+                        </input>
+                        <span class="sep">--</span>
+                        $
+                        <input type="text" class="to" value="500" id="max-price">
+                        </input>
                     </div>
-                    <input type="submit" value="Filter" class="sqaure-btn submit-btn">
+                    <input value="Filter" type="submit" class="sqaure-btn submit-btn" id="price-submit">
                 </div>
             </form>
-            <form method="get" class="filters-form-name" action="../HTML/products.html">
+            <form method="get" class="filters-form-name" action="../HTML/products.html" autocomplete="off">
                 <input type="text" class="filter-form-control form-control" placeholder="Search Products"
-                    id="search-product" name="name">
+                    id="search-product" name="name" autocomplete="off">
 
-                <input type="submit" value="Search" class="sqaure-btn submit-btn">
+                <input type="submit" value="Search" class="sqaure-btn submit-btn" autocomplete="off">
             </form>
 
         </div>

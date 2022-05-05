@@ -98,7 +98,15 @@
 
 .price-range-tags .from,
 .price-range-tags .to {
-    padding: 0 5px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: 35px;
+}
+
+.price-range-tags .sep{
+    padding-right: 30px;
 }
 
 .filter-form-control {

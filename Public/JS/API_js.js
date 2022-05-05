@@ -27,16 +27,7 @@ const insertData = (insertInto, promise, toShow, insertionFunction) => {
     })
 }
 
-const all_products_container = document.getElementById('all-products-container') // for products page
 const new_products_home = document.getElementById('new-products-home'); // for home page
-
-if (all_products_container) {
-    const params = window.location.search;
-    console.log(params);
-
-    let apiURL = `/api/v1/products${params}`;
-    insertData(all_products_container, getAPIdata(apiURL), 13, insertProduct);
-}
 
 if (new_products_home) {
     insertData(new_products_home, getAPIdata('/api/v1/products'), 4, insertProduct);
@@ -51,6 +42,39 @@ if (featured) {
 
 if (sale) {
     insertData(sale, getAPIdata('/api/v1/products?sale=true'), 3, insertSmallProds);
+}
+
+// products html
+const all_products_container = document.getElementById('all-products-container') // for products page
+
+if (all_products_container) {
+    const params = window.location.search;
+
+    let apiURL = `/api/v1/products${params}`;
+    insertData(all_products_container, getAPIdata(apiURL), 13, insertProduct);
+
+    const min_price = document.getElementById('min-price');
+    const max_price = document.getElementById('max-price');
+    const filter_btn = document.getElementById('price-submit');
+
+    getAPIdata('/api/v1/products?fields=price&sort=-price&limit=1').then((product) => { // to get max price 
+        max_price.value = product.products[0].price;
+    })
+    getAPIdata('/api/v1/products?fields=price&sort=price&limit=1').then((product) => { // to get min price
+        min_price.value = product.products[0].price;
+    })
+
+    filter_btn.addEventListener('click', (event) => {
+        event.preventDefault();
+        let from = min_price.value;
+        let to = max_price.value;
+        apiURL = `/api/v1/products?numericFilters=price>=${from},price<=${to}`;
+        
+        all_products_container.innerHTML = ``;
+
+        insertData(all_products_container, getAPIdata(apiURL), 13, insertProduct);
+    })
+
 }
 
 //__________________________Single Product stuff_________________________________________________

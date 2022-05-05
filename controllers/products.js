@@ -9,7 +9,7 @@ const img_path = '../img/Products';
 const getAllProducts = async (req, res) => {
 
     // applying qureies to our search
-    const { featured, sale, name, numericFilters, categories } = req.query;
+    const { featured, sale, name, numericFilters, categories, fields, limit, sort } = req.query;
 
     var queryObject = {};
 
@@ -52,6 +52,9 @@ const getAllProducts = async (req, res) => {
             (match) => `-${operatorMap[match]}-`
         );
         const options = ['price', 'rating', '_id'];
+
+        queryObject.$and = [];
+
         filters = filters.split(',').forEach((item) => {
             const [field, operator, value] = item.split('-');
             if (options.includes(field)) {
@@ -59,15 +62,34 @@ const getAllProducts = async (req, res) => {
                     queryObject[field] = { [operator]: value }
                 }
                 else {
-                    queryObject[field] = { [operator]: Number(value) };
+                    let obj = {}
+                    obj[field] = { [operator]: Number(value) };
+                    queryObject.$and.push(obj);
+
                 }
             }
         });
     }
-
     // fetching the values
 
     let result = Products.find(queryObject)
+
+    // sort
+    if (sort) {
+        const sortList = sort.split(',').join(' ');
+
+        result = result.sort(sortList);
+    } else {
+        result = result.sort('createdAt');
+    }
+
+    if (fields) {
+        const fieldsList = fields.split(',').join(' ');
+        result = result.select(fieldsList);
+    }
+    if (limit) {
+        result = result.limit(limit);
+    }
 
     const products = await result;
     res.status(StatusCodes.OK).json({ nbHits: products.length, products })
