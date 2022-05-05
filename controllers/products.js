@@ -79,9 +79,11 @@ const createProduct = async (req, res) => {
     // *changing image paths, 
     req.body.image = path.join(img_path, req.body.image);
 
-    req.body.small_Images = req.body.small_Images.map((element) => {
-        return path.join(img_path, element);
-    })
+    if (req.body.small_Images) {
+        req.body.small_Images = req.body.small_Images.map((element) => {
+            return path.join(img_path, element);
+        })
+    }
 
     req.body.category = req.body.category.map((element) => {
         return element.toLowerCase();

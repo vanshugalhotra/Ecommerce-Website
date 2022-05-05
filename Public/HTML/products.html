@@ -60,12 +60,42 @@
             <h1 class="bold font1 center">Shop The New Collection</h1>
         </div>
         <div class="filter-options">
-            <form method="get" class="filters-form" action="../HTML/products.html">
-                <input type="text" class="filter-form-control form-control" placeholder="Search Products" id="search-product"
-                    name="name">
+            <form method="get" class="filters-form-price" action="../HTML/products.html">
+                <h3 class="wrapper-a">Filter By Price</h3>
+
+                <div class="price-slider">
+                    <div class="to-slide">
+
+                    </div>
+                    <span tabindex=0 class="slide-handle" style="left: 0%;">
+
+                    </span>
+                    <span tabindex=0 class="slide-handle" style="left: 100%;">
+
+                    </span>
+                </div>
+
+                <div class="price-btns">
+                    <div class="price-range-tags">
+                        Price:
+                        <span class="from">
+                            $20
+                        </span>
+                        --
+                        <span class="to">
+                            $500
+                        </span>
+                    </div>
+                    <input type="submit" value="Filter" class="sqaure-btn submit-btn">
+                </div>
+            </form>
+            <form method="get" class="filters-form-name" action="../HTML/products.html">
+                <input type="text" class="filter-form-control form-control" placeholder="Search Products"
+                    id="search-product" name="name">
 
                 <input type="submit" value="Search" class="sqaure-btn submit-btn">
             </form>
+
         </div>
         <div class="all-product-items add-quick-view" id="all-products-container">
         </div>

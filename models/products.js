@@ -21,10 +21,13 @@ const ProductsSchema = new mongoose.Schema({
         type: String,
         default: '/def/def.jpg'
     },
-    
+
     small_Images: {
         type: [String],
-        default: ['/def/s1.jpg', '/def/s2.jpg','/def/s3.jpg','/def/s4.jpg','/def/s5.jpg']
+        default: function () {
+            const img = this.image;
+            return [img, img, img, img, img];
+        }
     },
     category: {
         type: [String],
@@ -55,11 +58,11 @@ const ProductsSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     },
-    sale:{
+    sale: {
         type: Boolean,
         default: false
     },
-    sizes:{
+    sizes: {
         type: [String],
         default: ["M", "L", "XL", "XXL"],
     },
@@ -69,6 +72,12 @@ const ProductsSchema = new mongoose.Schema({
             sku: 21,
         }
     }
-}, { timestamps: true});
+}, { timestamps: true });
+
+// ProductsSchema.pre('save', function (next) {
+//     img = this.image;
+//     this.small_Images = [img, img, img, img, img];
+//     next();
+// });
 
 module.exports = mongoose.model('Products', ProductsSchema);

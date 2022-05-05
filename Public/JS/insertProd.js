@@ -57,8 +57,6 @@ const insertSmallProds = (insertInto, data) => {
     productItem.classList = "prod-opt-single-prod";
     productItem.innerHTML += prod_opt_HTML;
 
-    insertInto.appendChild(productItem);
-    console.log("inserted");
-    
+    insertInto.appendChild(productItem);    
 }
 export { insertProduct, insertSmallProds };

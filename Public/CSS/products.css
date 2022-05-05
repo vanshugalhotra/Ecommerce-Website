@@ -23,19 +23,91 @@
     flex-direction: column;
 }
 
-.filters-form{
+.filter-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 3rem;
+    width: 80vw;
+}
+
+
+.filters-form-name {
     display: flex;
     width: 40vw;
 }
 
-.filter-form-control{
+.filters-form-price {
+    /* padding-right: 4rem; */
+}
+
+.price-slider {
+    position: relative;
+    height: 5px;
+    background-color: #f6dada;
+    margin-right: 13px;
+    margin-top: 20px;
+}
+
+.price-slider .to-slide{
+    position: absolute;
+    display: block;
+    height: 100%;
+    background-color: #e08686;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+}
+
+.price-slider .slide-handle{
+    position: absolute;
+    top: -5px;
+    height: 14px;
+    width: 14px;
+    background-color: #000;
+    margin: 0 0 0 -1px;
+    cursor: pointer;
+    outline: medium none;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.price-slider .slide-handle::after{
+    background-color: #fff;
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    border-radius: 50%;
+}
+
+.filters-form-price input[type=submit] {
+    padding: 10px 25px !important;
+}
+
+.filters-form-price .price-range-tags {
+    font-family: var(--font2);
+    font-size: 13px;
+    line-height: 22px;
+    color: #333;
+    margin-right: 3rem;
+    display: inline-block;
+}
+
+.price-range-tags .from,
+.price-range-tags .to {
+    padding: 0 5px;
+}
+
+.filter-form-control {
     height: 50px;
     margin-top: 0;
     margin-right: 1.5rem;
 }
 
-.filters-form input[type=submit]{
+.filters-form-name input[type=submit] {
     margin: 0;
     height: 50px;
 }
@@ -46,5 +118,3 @@
     grid-row-gap: 2rem;
     margin: 3em 8em;
 }
-
-

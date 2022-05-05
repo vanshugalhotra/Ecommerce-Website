@@ -1,21 +1,20 @@
-[
-    {
+[{
         "name": "Green Blazer",
         "price": 245,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/1/1.jpg",
-        "small_Images": ["/1/s1.jpg", "/1/s2.jpg","/1/s3.jpg","/1/s4.jpg","/1/s5.jpg"],
+        "small_Images": ["/1/s1.jpg", "/1/s2.jpg", "/1/s3.jpg", "/1/s4.jpg", "/1/s5.jpg"],
         "category": ["clothes", "Men", "Stylish"],
-        "tags": ["clothes","men", "coats", "fashion"],
+        "tags": ["clothes", "men", "coats", "fashion"],
         "inventory": 100,
         "rating": 5,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 9,
             "weight": "800 gm",
-            "Dimensions" : "70 x 30 x 70 cm"
+            "Dimensions": "70 x 30 x 70 cm"
         }
     },
     {
@@ -23,18 +22,18 @@
         "price": 315,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/2/2.jpg",
-        "small_Images": ["/2/s1.jpg", "/2/s2.jpg","/2/s3.jpg","/2/s4.jpg","/2/s5.jpg"],
+        "small_Images": ["/2/s1.jpg", "/2/s2.jpg", "/2/s3.jpg", "/2/s4.jpg", "/2/s5.jpg"],
         "category": ["clothes", "Women"],
-        "tags": ["clothes","women", "coats", "fashion"],
+        "tags": ["clothes", "women", "coats", "fashion"],
         "inventory": 100,
         "rating": 5,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 9,
             "weight": "800 gm",
-            "Dimensions" : "70 x 30 x 70 cm",
+            "Dimensions": "70 x 30 x 70 cm",
             "composition": "wool"
         }
     },
@@ -43,18 +42,18 @@
         "price": 70,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/3/3.jpg",
-        "small_Images": ["/3/s1.jpg", "/3/s2.jpg","/3/s3.jpg","/3/s4.jpg","/3/s5.jpg"],
+        "small_Images": ["/3/s1.jpg", "/3/s2.jpg", "/3/s3.jpg", "/3/s4.jpg", "/3/s5.jpg"],
         "category": ["clothes", "women", "Skirt"],
-        "tags": ["clothes","women", "skirt", "fashion"],
+        "tags": ["clothes", "women", "skirt", "fashion"],
         "inventory": 20,
         "rating": 4,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 91,
             "weight": "200 gm",
-            "Dimensions" : "20 x 30 x 70 cm"
+            "Dimensions": "20 x 30 x 70 cm"
         }
     },
     {
@@ -62,18 +61,17 @@
         "price": 18,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/4/4.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["clothes", "Men", "shirt"],
-        "tags": ["clothes","men", "shirt", "fashion"],
+        "tags": ["clothes", "men", "shirt", "fashion"],
         "inventory": 10,
         "rating": 3,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 29,
             "weight": "200 gm",
-            "Dimensions" : "70 x 30 x 70 cm"
+            "Dimensions": "70 x 30 x 70 cm"
         }
     },
     {
@@ -81,18 +79,17 @@
         "price": 75,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/5/5.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["clothes", "women", "blouse"],
-        "tags": ["clothes","women","fashion"],
+        "tags": ["clothes", "women", "fashion"],
         "inventory": 12,
         "rating": 5,
         "numberOfReviews": 4,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 21,
             "weight": "150 gm",
-            "Dimensions" : "70 x 30 x 70 cm"
+            "Dimensions": "70 x 30 x 70 cm"
         }
     },
     {
@@ -100,19 +97,19 @@
         "price": 128,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/6/6.jpg",
-        "small_Images": ["/6/s1.jpg", "/6/s2.jpg","/6/s3.jpg","/6/s4.jpg","/6/s5.jpg"],
+        "small_Images": ["/6/s1.jpg", "/6/s2.jpg", "/6/s3.jpg", "/6/s4.jpg", "/6/s5.jpg"],
         "category": ["clothes", "women", "skirt"],
-        "tags": ["clothes","women", "skirt", "fashion"],
+        "tags": ["clothes", "women", "skirt", "fashion"],
         "inventory": 6,
         "rating": 5,
         "sale": true,
         "numberOfReviews": 2,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 29,
             "weight": "200 gm",
-            "Dimensions" : "70 x 30 x 70 cm",
+            "Dimensions": "70 x 30 x 70 cm",
             "composition": "cotton"
         }
     },
@@ -121,19 +118,18 @@
         "price": 258,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/8.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["clothes", "women", "coat"],
-        "tags": ["clothes","women","fashion"],
+        "tags": ["clothes", "women", "fashion"],
         "inventory": 31,
         "rating": 4,
         "sale": true,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 29,
             "weight": "200 gm",
-            "Dimensions" : "70 x 30 x 70 cm"
+            "Dimensions": "70 x 30 x 70 cm"
         }
     },
     {
@@ -141,18 +137,17 @@
         "price": 38,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/9.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["clothes", "women"],
-        "tags": ["clothes","women","fashion"],
+        "tags": ["clothes", "women", "fashion"],
         "inventory": 20,
         "rating": 2,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 29,
             "weight": "200 gm",
-            "Dimensions" : "70 x 30 x 70 cm"
+            "Dimensions": "70 x 30 x 70 cm"
         }
     },
     {
@@ -160,19 +155,18 @@
         "price": 125,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/10.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["clothes", "women", "coat"],
-        "tags": ["clothes","women","fashion"],
+        "tags": ["clothes", "women", "fashion"],
         "inventory": 20,
         "rating": 4,
         "numberOfReviews": 1,
         "sale": true,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 29,
             "weight": "200 gm",
-            "Dimensions" : "70 x 30 x 70 cm"
+            "Dimensions": "70 x 30 x 70 cm"
         }
     },
     {
@@ -180,18 +174,17 @@
         "price": 51,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/11.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["clothes", "women"],
-        "tags": ["clothes","women","fashion"],
+        "tags": ["clothes", "women", "fashion"],
         "inventory": 20,
         "rating": 4,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 29,
             "weight": "200 gm",
-            "Dimensions" : "70 x 30 x 70 cm"
+            "Dimensions": "70 x 30 x 70 cm"
         }
     },
     {
@@ -199,7 +192,6 @@
         "price": 18,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/12.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["Bags", "travel"],
         "tags": ["bags", "new"],
         "inventory": 20,
@@ -207,7 +199,7 @@
         "featured": true,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 29,
             "weight": "200 gm"
@@ -218,14 +210,13 @@
         "price": 358,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/14.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["Accessories", "watch"],
-        "tags": ["Accessories","watch","fashion"],
+        "tags": ["Accessories", "watch", "fashion"],
         "inventory": 20,
         "rating": 5,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 29,
             "weight": "200 gm"
@@ -236,19 +227,18 @@
         "price": 538,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/15.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["clothes", "men", "blazers"],
-        "tags": ["clothes","men","fashion"],
+        "tags": ["clothes", "men", "fashion"],
         "inventory": 5,
         "rating": 5,
         "featured": true,
         "numberOfReviews": 1,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 6,
             "weight": "900 gm",
-            "Dimensions" : "70 x 30 x 70 cm"
+            "Dimensions": "70 x 30 x 70 cm"
         }
     },
     {
@@ -256,19 +246,18 @@
         "price": 21,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/16.jpg",
-        "small_Images": ["/def/s1.jpg", "/def/s2.jpg","/def/s3.jpg","/def/s4.jpg","/def/s5.jpg"],
         "category": ["accessories", "men"],
-        "tags": ["accessories","men"],
+        "tags": ["accessories", "men"],
         "inventory": 20,
         "rating": 4,
         "featured": true,
         "numberOfReviews": 4,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 29,
             "weight": "200 gm",
-            "Dimensions" : "70 x 30 x 70 cm"
+            "Dimensions": "70 x 30 x 70 cm"
         }
     },
     {
@@ -276,16 +265,16 @@
         "price": 211,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/23/23.jpg",
-        "small_Images": ["/23/s1.jpg", "/23/s2.jpg","/23/s3.jpg","/23/s4.jpg","/23/s5.jpg"],
+        "small_Images": ["/23/s1.jpg", "/23/s2.jpg", "/23/s3.jpg", "/23/s4.jpg", "/23/s5.jpg"],
         "category": ["footwear", "women"],
-        "tags": ["footwear","women"],
+        "tags": ["footwear", "women"],
         "inventory": 2,
         "rating": 4,
         "featured": true,
         "sale": true,
         "numberOfReviews": 4,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 9,
             "weight": "300 gm"
@@ -296,14 +285,14 @@
         "price": 111,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/24.jpg",
-        "small_Images": ["/24.jpg", "/24.jpg","/24.jpg","/24.jpg","/24.jpg"],
+        "small_Images": ["/24.jpg", "/24.jpg", "/24.jpg", "/24.jpg", "/24.jpg"],
         "category": ["footwear", "women"],
-        "tags": ["footwear","women"],
+        "tags": ["footwear", "women"],
         "inventory": 12,
         "rating": 4,
         "numberOfReviews": 4,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 93,
             "weight": "200 gm"
@@ -314,14 +303,14 @@
         "price": 191,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/18.jpg",
-        "small_Images": ["/18.jpg", "/18.jpg","/18.jpg","/18.jpg","/18.jpg"],
+        "small_Images": ["/18.jpg", "/18.jpg", "/18.jpg", "/18.jpg", "/18.jpg"],
         "category": ["footwear", "men"],
-        "tags": ["footwear","men"],
+        "tags": ["footwear", "men"],
         "inventory": 12,
         "rating": 4,
         "numberOfReviews": 4,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 93,
             "weight": "200 gm"
@@ -332,14 +321,14 @@
         "price": 110,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/17.jpg",
-        "small_Images": ["/17.jpg", "/17.jpg","/17.jpg","/17.jpg","/17.jpg"],
+        "small_Images": ["/17.jpg", "/17.jpg", "/17.jpg", "/17.jpg", "/17.jpg"],
         "category": ["footwear", "men"],
-        "tags": ["footwear","men"],
+        "tags": ["footwear", "men"],
         "inventory": 12,
         "rating": 4,
         "numberOfReviews": 4,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 93,
             "weight": "200 gm"
@@ -350,16 +339,67 @@
         "price": 410,
         "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
         "image": "/32.jpg",
-        "small_Images": ["/32.jpg", "/32.jpg","/32.jpg","/32.jpg","/32.jpg"],
+        "small_Images": ["/32.jpg", "/32.jpg", "/32.jpg", "/32.jpg", "/32.jpg"],
         "category": ["footwear", "men"],
-        "tags": ["footwear","men"],
+        "tags": ["footwear", "men"],
         "inventory": 12,
         "rating": 4,
         "numberOfReviews": 4,
         "colors": ["#222"],
-        "sizes": ["M", "L", "XL","XXL"],
+        "sizes": ["M", "L", "XL", "XXL"],
         "otherInfo": {
             "sku": 93,
+            "weight": "200 gm"
+        }
+    },
+    {
+        "name": "Leather Belt",
+        "price": 110,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/29.jpg",
+        "category": ["accessories", "men"],
+        "tags": ["accessories", "men"],
+        "inventory": 112,
+        "rating": 5,
+        "numberOfReviews": 14,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL", "XXL"],
+        "otherInfo": {
+            "sku": 93,
+            "weight": "200 gm"
+        }
+    },
+    {
+        "name": "Glam Earrings",
+        "price": 85,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/26.jpg",
+        "category": ["accessories", "women", "Earrings"],
+        "tags": ["accessories", "women"],
+        "inventory": 12,
+        "rating": 3,
+        "numberOfReviews": 14,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL", "XXL"],
+        "otherInfo": {
+            "sku": 61,
+            "weight": "200 gm"
+        }
+    },
+    {
+        "name": "Retro Sunglasses",
+        "price": 385,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "/33.jpg",
+        "category": ["accessories", "sunglasses"],
+        "tags": ["accessories", "women", "men", "cool"],
+        "inventory": 122,
+        "rating": 3,
+        "numberOfReviews": 14,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL", "XXL"],
+        "otherInfo": {
+            "sku": 61,
             "weight": "200 gm"
         }
     }

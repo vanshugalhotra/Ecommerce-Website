@@ -10,11 +10,13 @@ const img_path = '../img/Products';
 for (eachProd of jsonProducts) {
     eachProd.image = path.join(img_path, eachProd.image);
 
-    eachProd.small_Images = eachProd.small_Images.map((element) => {
-        return path.join(img_path, element);
-    })
-    
-    eachProd.category = eachProd.category.map((element)=>{
+    if (eachProd.small_Images) {
+        eachProd.small_Images = eachProd.small_Images.map((element) => {
+            return path.join(img_path, element);
+        })
+    }
+
+    eachProd.category = eachProd.category.map((element) => {
         return element.toLowerCase();
     })
 

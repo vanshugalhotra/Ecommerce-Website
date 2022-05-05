@@ -11,10 +11,6 @@ const getAPIdata = async (url) => {
     }
 }
 
-
-const all_products_container = document.getElementById('all-products-container') // for products page
-const new_products_home = document.getElementById('new-products-home'); // for home page
-
 const insertData = (insertInto, promise, toShow, insertionFunction) => {
     let i = 0;
     promise.then((allProducts) => {
@@ -30,6 +26,9 @@ const insertData = (insertInto, promise, toShow, insertionFunction) => {
         }
     })
 }
+
+const all_products_container = document.getElementById('all-products-container') // for products page
+const new_products_home = document.getElementById('new-products-home'); // for home page
 
 if (all_products_container) {
     const params = window.location.search;
