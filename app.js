@@ -7,12 +7,12 @@ const path = require('path');
 // routers
 const productsRouter = require('./routes/products');
 const authRouter = require('./routes/auth');
+const userRouter = require('./routes/user');
 // db
 const connectDB = require('./db/connect');
 // middleware
 const notFound = require('./middlewares/not_found');
 const errorHandlerMiddleware = require('./middlewares/errorHandler');
-const authenticateUser = require('./middlewares/authentication');
 
 const app = express();
 
@@ -20,10 +20,17 @@ const app = express();
 app.use(express.static(path.join(__dirname, "Public")));
 
 app.use(express.json())
-app.use(express.urlencoded({extended: true})); // to get the data from forms
+app.use(express.urlencoded({ extended: true })); // to get the data from forms
 
+// PUG specific stuff
+
+app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, 'views'));
+
+// routes
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/products', productsRouter);
+app.use('/api/v1/user', userRouter);
 
 app.use(notFound); // using the notFound middleware
 app.use(errorHandlerMiddleware);

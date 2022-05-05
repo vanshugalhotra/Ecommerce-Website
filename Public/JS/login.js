@@ -57,7 +57,7 @@ login_button.addEventListener('click', (event) => {
     postData('/api/v1/auth/login', { login_email, login_password })
         .then(data => {
             if (data.success) {
-                alert(`logged in successfully!`);
+                alert("Logged in Successfully!");
             }
             else {
                 alert(`${data.msg}`);
