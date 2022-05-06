@@ -402,5 +402,23 @@
             "sku": 61,
             "weight": "200 gm"
         }
+    },
+    {
+        "name": "Gold Ring",
+        "price": 685,
+        "description": "Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci.",
+        "image": "34/34.jpg",
+        "small_Images": ["34/s1.jpg","34/s2.jpg","34/s3.jpg","34/s4.jpg","34/s5.jpg"],
+        "category": ["accessories", "ring"],
+        "tags": ["accessories", "women", "men", "cool"],
+        "inventory": 122,
+        "rating": 3,
+        "numberOfReviews": 14,
+        "colors": ["#222"],
+        "sizes": ["M", "L", "XL", "XXL"],
+        "otherInfo": {
+            "sku": 61,
+            "weight": "200 gm"
+        }
     }
 ]

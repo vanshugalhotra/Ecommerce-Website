@@ -170,7 +170,7 @@ html {
 
 .cat-item .cat-item-text {
     margin-top: .4rem;
-    background-color: rgb(252, 242, 242);
+    background-color: rgb(150 223 233 / 65%);
     width: 100%;
     line-height: 3rem;
 }

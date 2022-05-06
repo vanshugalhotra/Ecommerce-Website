@@ -1,5 +1,4 @@
 import { insertProduct, insertSmallProds } from "./insertProd.js";
-
 const getAPIdata = async (url) => {
     try {
         const response = await fetch(url)
@@ -51,7 +50,9 @@ if (all_products_container) {
     const params = window.location.search;
 
     let apiURL = `/api/v1/products${params}`;
-    insertData(all_products_container, getAPIdata(apiURL), 13, insertProduct);
+
+    insertData(all_products_container, getAPIdata(apiURL), 12, insertProduct);
+    all_products_container.scrollIntoView();
 
     const min_price = document.getElementById('min-price');
     const max_price = document.getElementById('max-price');
@@ -73,6 +74,7 @@ if (all_products_container) {
         all_products_container.innerHTML = ``;
 
         insertData(all_products_container, getAPIdata(apiURL), 13, insertProduct);
+        all_products_container.scrollIntoView();
     })
 
 }

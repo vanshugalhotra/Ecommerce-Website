@@ -32,10 +32,14 @@ const ProductsSchema = new mongoose.Schema({
     category: {
         type: [String],
         required: [true, 'Please provide product Category'],
+        trim: true
     },
     tags: {
         type: [String],
         required: [true, "Please Provide tags"],
+        default: function(){
+            return this.category;
+        }
     },
     inventory: {
         type: Number,

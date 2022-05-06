@@ -1,6 +1,6 @@
 setTimeout(() => {
     console.log("quick");
-    
+
     const getAPIdata = async (url) => {
         try {
             const response = await fetch(url)
@@ -25,6 +25,7 @@ setTimeout(() => {
 
     // getting all the eyes icons from all_product-items
     var all_eyeIcons = all_product_items.getElementsByClassName('eye-icon');
+    var star_rating = document.getElementsByClassName('star-rating')[0];
 
     for (let each_eyeIcon of all_eyeIcons) {
         each_eyeIcon.addEventListener('click', function (e) {
@@ -37,6 +38,7 @@ setTimeout(() => {
                     quick_desc.innerText = clicked_product.product.description;
                     quick_price.innerText = `$${clicked_product.product.price}`;
                     quick_img.src = clicked_product.product.image;
+                    star_rating.classList = `star-rating star-${clicked_product.product.rating}`;
                 })
 
             quickView.style.transform = "translateY(0%)";

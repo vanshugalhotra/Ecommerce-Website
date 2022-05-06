@@ -60,6 +60,7 @@ const getAllProducts = async (req, res) => {
             if (options.includes(field)) {
                 if (field === '_id') {
                     queryObject[field] = { [operator]: value }
+                    queryObject.$and.push({})
                 }
                 else {
                     let obj = {}
@@ -112,7 +113,7 @@ const createProduct = async (req, res) => {
     })
 
     const product = await Products.create(req.body);
-    res.status(StatusCodes.CREATED).json({ product });
+    res.status(StatusCodes.CREATED).json({success: true,  product, msg: "Product added successfully!" });
 }
 const getSingleProduct = async (req, res) => {
     const { id: productID } = req.params;
