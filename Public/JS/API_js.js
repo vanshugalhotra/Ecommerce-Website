@@ -38,7 +38,7 @@ const sale = document.getElementById('sale');
 if (featured) {
     insertData(featured, getAPIdata('/api/v1/products?featured=true'), 3, insertSmallProds);
 }
-
+ 
 if (sale) {
     insertData(sale, getAPIdata('/api/v1/products?sale=true'), 3, insertSmallProds);
 }
